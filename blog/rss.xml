@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type="text/xsl" href="rss.xsl"?>
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+    <channel>
+        <title>AevirDao Tech Blog</title>
+        <link>https://aevirdaotech.github.io/blog</link>
+        <description>AevirDao Tech Blog</description>
+        <lastBuildDate>Fri, 19 Dec 2025 03:02:38 GMT</lastBuildDate>
+        <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
+        <generator>https://github.com/jpmonette/feed</generator>
+        <language>en</language>
+        <item>
+            <title><![CDATA[Aevir Blockchain Architecture: Dual-Layer Consensus Built for the AI Era]]></title>
+            <link>https://aevirdaotech.github.io/blog/aevir-blockchain-architecture-en</link>
+            <guid>https://aevirdaotech.github.io/blog/aevir-blockchain-architecture-en</guid>
+            <pubDate>Fri, 19 Dec 2025 03:02:38 GMT</pubDate>
+            <description><![CDATA[Discover how Aevir achieves the perfect balance between performance and decentralization through innovative dual-layer architecture]]></description>
+            <content:encoded><![CDATA[<blockquote>
+<p>Discover how Aevir achieves the perfect balance between performance and decentralization through innovative dual-layer architecture</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="introduction">Introduction<a href="https://aevirdaotech.github.io/blog/aevir-blockchain-architecture-en#introduction" class="hash-link" aria-label="Direct link to Introduction" title="Direct link to Introduction" translate="no">​</a></h2>
+<p>Aevir emerges at the intersection of AI and blockchain. As a public chain designed specifically for distributed AI computing, Aevir faces unique challenges: handling massive AI training tasks and data interactions while ensuring network decentralization and security.</p>
+<p>Traditional blockchains often struggle between <strong>performance</strong> and <strong>decentralization</strong>—pursuing high throughput means sacrificing node count, while maintaining full decentralization leads to slow transaction confirmations. Aevir's answer: <strong>we want it all</strong>.</p>
+<p>Through innovative <strong>dual-layer consensus architecture</strong>, Aevir achieves sub-second transaction confirmation unified with large-scale decentralization.</p>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="architecture-overview">Architecture Overview<a href="https://aevirdaotech.github.io/blog/aevir-blockchain-architecture-en#architecture-overview" class="hash-link" aria-label="Direct link to Architecture Overview" title="Direct link to Architecture Overview" translate="no">​</a></h2>
+<p><img decoding="async" loading="lazy" alt="Aevir Dual-Layer Consensus Architecture" src="https://aevirdaotech.github.io/assets/images/aevir-architecture-blog-en-d526399ea312d8a95d3ee817a20e583e.svg" width="1000" height="700" class="img_ev3q"></p>
+<p>The diagram above illustrates Aevir's core architecture: the Execution Layer handles rapid transaction processing, the Block Production Layer ensures decentralized security, and both layers collaborate to complete the entire flow from transaction initiation to final on-chain confirmation.</p>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="dual-layer-architecture-clear-division-of-labor">Dual-Layer Architecture: Clear Division of Labor<a href="https://aevirdaotech.github.io/blog/aevir-blockchain-architecture-en#dual-layer-architecture-clear-division-of-labor" class="hash-link" aria-label="Direct link to Dual-Layer Architecture: Clear Division of Labor" title="Direct link to Dual-Layer Architecture: Clear Division of Labor" translate="no">​</a></h2>
+<p>Aevir's core design philosophy is <strong>separation of computation and attestation</strong>. The network is divided into two collaborative tiers:</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="execution-layer-lightning-fast-transaction-engine">Execution Layer: Lightning-Fast Transaction Engine<a href="https://aevirdaotech.github.io/blog/aevir-blockchain-architecture-en#execution-layer-lightning-fast-transaction-engine" class="hash-link" aria-label="Direct link to Execution Layer: Lightning-Fast Transaction Engine" title="Direct link to Execution Layer: Lightning-Fast Transaction Engine" translate="no">​</a></h3>
+<p>The Execution Layer is the high-performance core of the Aevir network, dedicated to processing all user transactions and complex computational tasks.</p>
+<p><strong>Core Responsibilities:</strong></p>
+<ul>
+<li class="">Receive and process all user-initiated transaction requests</li>
+<li class="">Execute smart contracts, including DeFi protocols, AI task scheduling, etc.</li>
+<li class="">Calculate contribution scores for all network nodes</li>
+<li class="">Achieve <strong>sub-second</strong> transaction confirmation</li>
+</ul>
+<p><strong>How It Works:</strong>
+The Execution Layer consists of <strong>21 high-performance execution nodes</strong> forming the <strong>Execution Committee</strong>, using <strong>PoS (Proof of Stake) + BFT (Byzantine Fault Tolerance)</strong> consensus. These nodes earn execution rights through token staking, selected by stake ranking.</p>
+<p>When users initiate transactions, the Execution Layer Leader collects and packages data, and all 21 nodes quickly complete internal voting. With more than 2/3 of nodes signing in agreement, the transaction receives preliminary confirmation—typically completed <strong>within seconds</strong>.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="block-production-layer-guardian-of-decentralization">Block Production Layer: Guardian of Decentralization<a href="https://aevirdaotech.github.io/blog/aevir-blockchain-architecture-en#block-production-layer-guardian-of-decentralization" class="hash-link" aria-label="Direct link to Block Production Layer: Guardian of Decentralization" title="Direct link to Block Production Layer: Guardian of Decentralization" translate="no">​</a></h3>
+<p>If the Execution Layer is about "running fast," the Block Production Layer is about "standing firm."</p>
+<p><strong>Core Responsibilities:</strong></p>
+<ul>
+<li class="">Verify data integrity submitted by the Execution Layer</li>
+<li class="">Provide large-scale decentralized witnessing</li>
+<li class="">Generate final blocks and complete on-chain attestation</li>
+<li class="">Prevent minority node collusion or misbehavior</li>
+</ul>
+<p><strong>How It Works:</strong>
+The Block Production Layer uses Aevir's original <strong>PoIC (Proof of Intelligent Contribution)</strong> consensus mechanism. Every cycle (approximately 6 hours), the system uses VRF random selection to choose <strong>51 Witness Nodes</strong> from nodes ranking in the top 50% by contribution score.</p>
+<p>These Witness Nodes perform secondary verification and voting on data submitted by the Execution Layer. Only when <strong>34 or more nodes (over 2/3)</strong> reach consensus does the rotating <strong>Committer</strong> package the final block and broadcast it network-wide.</p>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="dual-bft-double-insurance-for-security">Dual BFT: Double Insurance for Security<a href="https://aevirdaotech.github.io/blog/aevir-blockchain-architecture-en#dual-bft-double-insurance-for-security" class="hash-link" aria-label="Direct link to Dual BFT: Double Insurance for Security" title="Direct link to Dual BFT: Double Insurance for Security" translate="no">​</a></h2>
+<p>One of Aevir's most innovative designs is <strong>dual BFT consensus protection</strong>.</p>
+<p>Every transaction must pass through two checkpoints to truly be "on-chain":</p>
+<ol>
+<li class=""><strong>Execution Layer Consensus (Execution QC)</strong>: Internal BFT voting by 21 execution nodes</li>
+<li class=""><strong>Witness Layer Consensus (Witness QC)</strong>: Secondary BFT verification by 51 witness nodes</li>
+</ol>
+<p>Only with both "collective signature certificates" will a block be recognized network-wide.</p>
+<p><strong>What does this mean?</strong></p>
+<ul>
+<li class="">Even if some Execution Layer nodes attempt misbehavior, they'll be detected and rejected by the 51 independent Witness Nodes</li>
+<li class="">Even if a Committer goes offline, the other 50 Witness Nodes have already reached consensus and can immediately switch to the next candidate</li>
+<li class="">Attackers would need to simultaneously control the majority of nodes in both layers—attack costs increase exponentially</li>
+</ul>
+<p><strong>The network never stops. Data is never tampered.</strong></p>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="proof-of-intelligent-contribution-rewarding-real-contributors">Proof of Intelligent Contribution: Rewarding Real Contributors<a href="https://aevirdaotech.github.io/blog/aevir-blockchain-architecture-en#proof-of-intelligent-contribution-rewarding-real-contributors" class="hash-link" aria-label="Direct link to Proof of Intelligent Contribution: Rewarding Real Contributors" title="Direct link to Proof of Intelligent Contribution: Rewarding Real Contributors" translate="no">​</a></h2>
+<p>Traditional PoW competes on computing power, PoS competes on capital. Aevir's PoIC competes on <strong>real contribution</strong>.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="contribution-scoring-system">Contribution Scoring System<a href="https://aevirdaotech.github.io/blog/aevir-blockchain-architecture-en#contribution-scoring-system" class="hash-link" aria-label="Direct link to Contribution Scoring System" title="Direct link to Contribution Scoring System" translate="no">​</a></h3>
+<p>Aevir has built a complete contribution quantification system:</p>
+<ul>
+<li class=""><strong>Training Points</strong>: Calculated based on GPU performance, uptime stability, and task completion rate</li>
+<li class=""><strong>Library Points</strong>: Based on data storage volume, citation count, and community voting</li>
+</ul>
+<p>These two scores combine into <strong>IntelliPoints</strong>, directly determining the probability of receiving block rewards.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="fair-rotation-mechanism">Fair Rotation Mechanism<a href="https://aevirdaotech.github.io/blog/aevir-blockchain-architecture-en#fair-rotation-mechanism" class="hash-link" aria-label="Direct link to Fair Rotation Mechanism" title="Direct link to Fair Rotation Mechanism" translate="no">​</a></h3>
+<p>Every 6 hours (approximately 1,280 blocks), the system automatically conducts Witness Node elections:</p>
+<ol>
+<li class="">The signature of the last block from the previous cycle serves as the random seed</li>
+<li class="">VRF selection from the qualified contribution score node pool</li>
+<li class="">51 newly elected Witness Nodes seamlessly take over</li>
+</ol>
+<p>The entire election process executes entirely on-chain, transparent and verifiable by anyone, eliminating the possibility of manipulation.</p>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="deterministic-block-production-no-negotiation-right-on-schedule">Deterministic Block Production: No Negotiation, Right on Schedule<a href="https://aevirdaotech.github.io/blog/aevir-blockchain-architecture-en#deterministic-block-production-no-negotiation-right-on-schedule" class="hash-link" aria-label="Direct link to Deterministic Block Production: No Negotiation, Right on Schedule" title="Direct link to Deterministic Block Production: No Negotiation, Right on Schedule" translate="no">​</a></h2>
+<p>Within the Block Production Layer, Aevir employs a clever <strong>deterministic shuffling schedule</strong> mechanism to select block producers for each time slot.</p>
+<p>In traditional blockchains, determining who produces the next block often requires repeated negotiation or competition between nodes—wasting time and prone to forks. Aevir's approach:</p>
+<ol>
+<li class="">At the start of each cycle, the same VRF seed randomly shuffles the 51 Witness Nodes</li>
+<li class="">The entire cycle is divided into 20-second time slots</li>
+<li class="">The shuffled order directly maps to time slots—who produces which block is predetermined</li>
+</ol>
+<p>When your time slot arrives, you automatically assume duty; blocks produced outside your slot are rejected network-wide.</p>
+<p><strong>No handshakes, no competition. Everything proceeds as planned.</strong></p>
+<p>What if the scheduled block producer goes offline? No problem—the system automatically switches to the next candidate after a brief timeout, and the network continues running smoothly.</p>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="diverse-node-ecosystem-contributing-what-you-can-taking-what-you-need">Diverse Node Ecosystem: Contributing What You Can, Taking What You Need<a href="https://aevirdaotech.github.io/blog/aevir-blockchain-architecture-en#diverse-node-ecosystem-contributing-what-you-can-taking-what-you-need" class="hash-link" aria-label="Direct link to Diverse Node Ecosystem: Contributing What You Can, Taking What You Need" title="Direct link to Diverse Node Ecosystem: Contributing What You Can, Taking What You Need" translate="no">​</a></h2>
+<p>The Aevir network has three core node roles:</p>
+<table><thead><tr><th>Node Type</th><th>Primary Responsibility</th><th>Entry Requirements</th></tr></thead><tbody><tr><td><strong>Execution Node</strong></td><td>Execution Committee member, processing transactions, running contracts</td><td>Stake tokens, top 21 by stake ranking</td></tr><tr><td><strong>Training Node (ICN)</strong></td><td>Provide GPU computing power, participate in AI model training</td><td>Staking + hardware certification, unlimited quantity</td></tr><tr><td><strong>Content Node</strong></td><td>Provide storage space, store knowledge data</td><td>Staking + storage certification, unlimited quantity</td></tr></tbody></table>
+<p>This design allows participants with different resource endowments to find their place:</p>
+<ul>
+<li class="">Have capital advantage? Become an Execution Node for stable consensus rewards</li>
+<li class="">Have GPU computing power? Become a Training Node and earn mining rewards through contribution</li>
+<li class="">Have storage resources? Become a Content Node and support the AI ecosystem with data</li>
+</ul>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="economic-incentives-every-contribution-gets-rewarded">Economic Incentives: Every Contribution Gets Rewarded<a href="https://aevirdaotech.github.io/blog/aevir-blockchain-architecture-en#economic-incentives-every-contribution-gets-rewarded" class="hash-link" aria-label="Direct link to Economic Incentives: Every Contribution Gets Rewarded" title="Direct link to Economic Incentives: Every Contribution Gets Rewarded" translate="no">​</a></h2>
+<p>Aevir has designed an elegant reward distribution mechanism to ensure all participants receive fair compensation:</p>
+<p><strong>Block Reward Distribution:</strong></p>
+<ul>
+<li class=""><strong>5%</strong> → Shared equally among the 21 Execution Committee nodes</li>
+<li class=""><strong>15%</strong> → Exclusively to the on-duty Committer</li>
+<li class=""><strong>50%</strong> → Training Node reward pool, distributed by computing contribution</li>
+<li class=""><strong>30%</strong> → Knowledge contribution pool, distributed by data contribution</li>
+</ul>
+<p>The ingenuity of this design:</p>
+<ul>
+<li class="">Core infrastructure maintainers (Execution Nodes, Committers) receive stable income</li>
+<li class="">Contributors of computing power and data accumulate rewards through sustained contribution</li>
+<li class="">Want block production rewards? Improve your contribution score to increase your chances of being selected as a Witness Node</li>
+</ul>
+<p><strong>The more you do, the more you earn.</strong></p>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="technical-advantages-summary">Technical Advantages Summary<a href="https://aevirdaotech.github.io/blog/aevir-blockchain-architecture-en#technical-advantages-summary" class="hash-link" aria-label="Direct link to Technical Advantages Summary" title="Direct link to Technical Advantages Summary" translate="no">​</a></h2>
+<p>Looking back at Aevir's architecture, several core advantages are clear:</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="-ultimate-performance-with-decentralization">🚀 Ultimate Performance with Decentralization<a href="https://aevirdaotech.github.io/blog/aevir-blockchain-architecture-en#-ultimate-performance-with-decentralization" class="hash-link" aria-label="Direct link to 🚀 Ultimate Performance with Decentralization" title="Direct link to 🚀 Ultimate Performance with Decentralization" translate="no">​</a></h3>
+<p>21 Execution Layer nodes ensure sub-second response; 51 Block Production Layer nodes guarantee decentralized security. Two layers working together, best of both worlds.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="-dual-bft-security">🔐 Dual BFT Security<a href="https://aevirdaotech.github.io/blog/aevir-blockchain-architecture-en#-dual-bft-security" class="hash-link" aria-label="Direct link to 🔐 Dual BFT Security" title="Direct link to 🔐 Dual BFT Security" translate="no">​</a></h3>
+<p>Two consensus checkpoints, dual signature verification. Attack costs increase exponentially, the network stands impregnable.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="️-fair-and-transparent-contribution-proof">⚖️ Fair and Transparent Contribution Proof<a href="https://aevirdaotech.github.io/blog/aevir-blockchain-architecture-en#%EF%B8%8F-fair-and-transparent-contribution-proof" class="hash-link" aria-label="Direct link to ⚖️ Fair and Transparent Contribution Proof" title="Direct link to ⚖️ Fair and Transparent Contribution Proof" translate="no">​</a></h3>
+<p>Moving beyond pure capital competition, real contribution becomes the core basis for rewards.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="-efficient-rotation-and-fault-tolerance">🔄 Efficient Rotation and Fault Tolerance<a href="https://aevirdaotech.github.io/blog/aevir-blockchain-architecture-en#-efficient-rotation-and-fault-tolerance" class="hash-link" aria-label="Direct link to 🔄 Efficient Rotation and Fault Tolerance" title="Direct link to 🔄 Efficient Rotation and Fault Tolerance" translate="no">​</a></h3>
+<p>Deterministic scheduling eliminates negotiation overhead; automatic failover ensures the network never stops.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="-precise-incentive-design">🎯 Precise Incentive Design<a href="https://aevirdaotech.github.io/blog/aevir-blockchain-architecture-en#-precise-incentive-design" class="hash-link" aria-label="Direct link to 🎯 Precise Incentive Design" title="Direct link to 🎯 Precise Incentive Design" translate="no">​</a></h3>
+<p>Multi-layer distribution mechanism ensures each participant gets their due, forming a positive ecosystem cycle.</p>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="conclusion">Conclusion<a href="https://aevirdaotech.github.io/blog/aevir-blockchain-architecture-en#conclusion" class="hash-link" aria-label="Direct link to Conclusion" title="Direct link to Conclusion" translate="no">​</a></h2>
+<p>Aevir's dual-layer architecture is not a simple patch on traditional blockchain, but a systematic redesign for the AI era's demands.</p>
+<p>By decoupling "fast execution" and "secure attestation" into two specialized layers, Aevir breaks the binary opposition between performance and decentralization. The Execution Layer acts like a precision high-speed engine, the Block Production Layer like a reliable security vault—both working in concert to support an efficient, secure, and fair distributed AI infrastructure.</p>
+<p>This is Aevir—next-generation blockchain infrastructure built for the AI era.</p>
+<hr>
+<p><em>Want to learn more technical details? Join the Aevir community and explore the infinite possibilities of AI × Blockchain with us.</em></p>]]></content:encoded>
+        </item>
+    </channel>
+</rss>
