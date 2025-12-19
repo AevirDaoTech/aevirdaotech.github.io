@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 700" width="1000" height="700">
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#64748b"/>
+    </marker>
+    <marker id="arrowGold" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#f59e0b"/>
+    </marker>
+    <linearGradient id="execGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#4F46E5"/>
+      <stop offset="100%" stop-color="#7C3AED"/>
+    </linearGradient>
+    <linearGradient id="blockGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#059669"/>
+      <stop offset="100%" stop-color="#10B981"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="2" dy="2" stdDeviation="3" flood-opacity="0.15"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1000" height="700" fill="#f8fafc"/>
+  
+  <!-- Main Title -->
+  <text x="500" y="40" text-anchor="middle" font-family="Arial, sans-serif" font-size="26" font-weight="bold" fill="#1e293b">Aevir Dual-Layer Consensus Architecture</text>
+  <text x="500" y="65" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="#64748b">High Performance Execution × Decentralized Security</text>
+
+  <!-- ========== Execution Layer ========== -->
+  <rect x="50" y="90" width="900" height="200" rx="16" fill="white" stroke="#4F46E5" stroke-width="2" filter="url(#shadow)"/>
+  <rect x="50" y="90" width="900" height="45" rx="16" fill="url(#execGrad)"/>
+  <rect x="50" y="119" width="900" height="16" fill="url(#execGrad)"/>
+  <text x="500" y="120" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="white">Execution Layer</text>
+  
+  <!-- Execution Layer - User -->
+  <rect x="80" y="155" width="130" height="70" rx="10" fill="#fef3c7" stroke="#f59e0b" stroke-width="2"/>
+  <text x="145" y="185" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" font-weight="bold" fill="#92400e">User / DApp</text>
+  <text x="145" y="205" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#a16207">Send Transactions</text>
+
+  <!-- Execution Layer - Execution Committee -->
+  <rect x="250" y="150" width="200" height="80" rx="10" fill="#dbeafe" stroke="#3b82f6" stroke-width="2"/>
+  <text x="350" y="175" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" font-weight="bold" fill="#1e40af">Execution Committee</text>
+  <text x="350" y="195" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#1d4ed8">21 Execution Nodes</text>
+  <text x="350" y="215" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#1d4ed8">PoS + BFT Consensus</text>
+
+  <!-- Execution Layer - Leader -->
+  <rect x="490" y="150" width="170" height="80" rx="10" fill="#fce7f3" stroke="#ec4899" stroke-width="2"/>
+  <text x="575" y="175" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" font-weight="bold" fill="#9d174d">Execution Leader</text>
+  <text x="575" y="195" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#be185d">Package Transactions</text>
+  <text x="575" y="215" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#be185d">Generate Merkle Root</text>
+
+  <!-- Execution Layer - Output -->
+  <rect x="700" y="155" width="130" height="70" rx="10" fill="#e0e7ff" stroke="#6366f1" stroke-width="2"/>
+  <text x="765" y="180" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#4338ca">Execution QC</text>
+  <text x="765" y="200" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#4f46e5">Quorum Certificate</text>
+  <text x="765" y="218" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#4f46e5">(>2/3 Signatures)</text>
+
+  <!-- Execution Layer Internal Arrows -->
+  <line x1="210" y1="190" x2="245" y2="190" stroke="#64748b" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="450" y1="190" x2="485" y2="190" stroke="#64748b" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="660" y1="190" x2="695" y2="190" stroke="#64748b" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- Execution Layer Feature Tag -->
+  <rect x="860" y="155" width="75" height="70" rx="8" fill="#4F46E5" fill-opacity="0.1"/>
+  <text x="897" y="180" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" fill="#4F46E5">⚡</text>
+  <text x="897" y="200" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#4F46E5">Fast</text>
+  <text x="897" y="215" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#4F46E5">Sub-Second</text>
+
+  <!-- ========== Cross-Layer Communication ========== -->
+  <line x1="500" y1="295" x2="500" y2="345" stroke="#f59e0b" stroke-width="4" marker-end="url(#arrowGold)"/>
+  <rect x="400" y="305" width="200" height="28" rx="14" fill="#fef3c7" stroke="#f59e0b" stroke-width="2"/>
+  <text x="500" y="324" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#92400e">📡 Cross-Layer Broadcast</text>
+
+  <!-- ========== Block Production Layer ========== -->
+  <rect x="50" y="355" width="900" height="200" rx="16" fill="white" stroke="#059669" stroke-width="2" filter="url(#shadow)"/>
+  <rect x="50" y="355" width="900" height="45" rx="16" fill="url(#blockGrad)"/>
+  <rect x="50" y="384" width="900" height="16" fill="url(#blockGrad)"/>
+  <text x="500" y="385" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="white">Block Production Layer</text>
+
+  <!-- Block Layer - 51 Witness -->
+  <rect x="80" y="415" width="200" height="85" rx="10" fill="#d1fae5" stroke="#10b981" stroke-width="2"/>
+  <text x="180" y="440" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" font-weight="bold" fill="#065f46">51 Witness Nodes</text>
+  <text x="180" y="460" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#047857">PoIC Random Selection</text>
+  <text x="180" y="478" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#047857">6-Hour Rotation</text>
+  <text x="180" y="496" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#047857">BFT Consensus (34/51)</text>
+
+  <!-- Block Layer - Committer -->
+  <rect x="320" y="415" width="180" height="85" rx="10" fill="#fef3c7" stroke="#f59e0b" stroke-width="2"/>
+  <text x="410" y="440" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" font-weight="bold" fill="#92400e">Committer</text>
+  <text x="410" y="460" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#a16207">Deterministic Schedule</text>
+  <text x="410" y="478" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#a16207">20-Second Time Slots</text>
+  <text x="410" y="496" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#a16207">Package Dual QC</text>
+
+  <!-- Block Layer - Final Block -->
+  <rect x="540" y="415" width="150" height="85" rx="10" fill="#10b981" stroke="#059669" stroke-width="2"/>
+  <text x="615" y="442" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" font-weight="bold" fill="white">Final Block</text>
+  <text x="615" y="462" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="white">Execution QC</text>
+  <text x="615" y="480" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="white">+ Witness QC</text>
+  <text x="615" y="498" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#dcfce7">Dual BFT Security</text>
+
+  <!-- Block Layer - Network Broadcast -->
+  <rect x="730" y="415" width="140" height="85" rx="10" fill="#ede9fe" stroke="#8b5cf6" stroke-width="2"/>
+  <text x="800" y="442" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" font-weight="bold" fill="#5b21b6">Broadcast</text>
+  <text x="800" y="462" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#7c3aed">Thousands of Nodes</text>
+  <text x="800" y="480" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#7c3aed">Sync Ledger</text>
+  <text x="800" y="498" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#7c3aed">Final Consistency</text>
+
+  <!-- Block Layer Internal Arrows -->
+  <line x1="280" y1="457" x2="315" y2="457" stroke="#64748b" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="500" y1="457" x2="535" y2="457" stroke="#64748b" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="690" y1="457" x2="725" y2="457" stroke="#64748b" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- Block Layer Feature Tag -->
+  <rect x="885" y="420" width="55" height="75" rx="8" fill="#059669" fill-opacity="0.1"/>
+  <text x="912" y="450" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" fill="#059669">🔐</text>
+  <text x="912" y="470" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#059669">Secure</text>
+  <text x="912" y="485" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#059669">Decentralized</text>
+
+  <!-- ========== Bottom Info Section ========== -->
+  <!-- Reward Distribution -->
+  <rect x="50" y="575" width="440" height="110" rx="12" fill="white" stroke="#f59e0b" stroke-width="2" filter="url(#shadow)"/>
+  <rect x="50" y="575" width="440" height="32" rx="12" fill="#f59e0b"/>
+  <rect x="50" y="595" width="440" height="12" fill="#f59e0b"/>
+  <text x="270" y="598" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white">💰 Block Reward Distribution</text>
+
+  <!-- Reward Bar Chart -->
+  <rect x="70" y="620" width="60" height="20" rx="4" fill="#3b82f6"/>
+  <text x="100" y="635" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="white">5%</text>
+  <text x="70" y="655" font-family="Arial, sans-serif" font-size="9" fill="#64748b">Exec Nodes</text>
+
+  <rect x="145" y="620" width="60" height="20" rx="4" fill="#f59e0b"/>
+  <text x="175" y="635" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="white">15%</text>
+  <text x="145" y="655" font-family="Arial, sans-serif" font-size="9" fill="#64748b">Committer</text>
+
+  <rect x="220" y="620" width="120" height="20" rx="4" fill="#10b981"/>
+  <text x="280" y="635" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="white">50%</text>
+  <text x="220" y="655" font-family="Arial, sans-serif" font-size="9" fill="#64748b">Training (Compute)</text>
+
+  <rect x="355" y="620" width="90" height="20" rx="4" fill="#8b5cf6"/>
+  <text x="400" y="635" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="white">30%</text>
+  <text x="355" y="655" font-family="Arial, sans-serif" font-size="9" fill="#64748b">Knowledge Pool</text>
+
+  <text x="270" y="675" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#94a3b8">Fair distribution by contribution — the more you do, the more you earn</text>
+
+  <!-- Node Ecosystem -->
+  <rect x="510" y="575" width="440" height="110" rx="12" fill="white" stroke="#6366f1" stroke-width="2" filter="url(#shadow)"/>
+  <rect x="510" y="575" width="440" height="32" rx="12" fill="#6366f1"/>
+  <rect x="510" y="595" width="440" height="12" fill="#6366f1"/>
+  <text x="730" y="598" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white">🌐 Diverse Node Ecosystem</text>
+
+  <!-- Three Node Types -->
+  <rect x="530" y="620" width="130" height="50" rx="6" fill="#dbeafe" stroke="#3b82f6" stroke-width="1"/>
+  <text x="595" y="640" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#1e40af">Execution Node</text>
+  <text x="595" y="655" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#1d4ed8">Fixed 21 · PoS Staking</text>
+
+  <rect x="670" y="620" width="130" height="50" rx="6" fill="#dcfce7" stroke="#22c55e" stroke-width="1"/>
+  <text x="735" y="640" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#15803d">Training Node</text>
+  <text x="735" y="655" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#16a34a">Unlimited · GPU Power</text>
+
+  <rect x="810" y="620" width="130" height="50" rx="6" fill="#fce7f3" stroke="#ec4899" stroke-width="1"/>
+  <text x="875" y="640" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#9d174d">Content Node</text>
+  <text x="875" y="655" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#be185d">Unlimited · Storage</text>
+
+  <text x="730" y="680" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#94a3b8">Contribute what you can, earn what you deserve — open participation network</text>
+
+</svg>
+
