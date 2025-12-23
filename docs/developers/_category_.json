@@ -1,0 +1,9 @@
+{
+  "label": "For Developers",
+  "position": 7,
+  "link": {
+    "type": "generated-index",
+    "description": "Technical documentation for developers, including APIs, smart contracts, and local development environment"
+  }
+}
+

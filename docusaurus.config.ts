@@ -77,10 +77,16 @@ const config: Config = {
     navbar: {
       title: "AevirDao Tech",
       logo: {
-        alt: "My Site Logo",
-        src: "img/logo.svg",
+        alt: "AevirDao Tech Logo",
+        src: "img/aevir.png",
       },
       items: [
+        {
+          type: "docSidebar",
+          sidebarId: "tutorialSidebar",
+          position: "left",
+          label: "Documentation",
+        },
         { to: "/blog", label: "Blog", position: "left" },
         {
           href: "https://github.com/AevirDaoTech",
@@ -92,6 +98,28 @@ const config: Config = {
     footer: {
       style: "dark",
       links: [
+        {
+          title: "Tutorial",
+          items: [
+            {
+              label: "Aevirdao Docs",
+              to: "/docs/category/aevir-overview",
+            },
+          ],
+        },
+        {
+          title: "Community",
+          items: [
+            {
+              label: "Discord",
+              href: "https://discord.com/invite/aevirdao",
+            },
+            {
+              label: "X",
+              href: "https://x.com/AevirDAO",
+            },
+          ],
+        },
         {
           title: "More",
           items: [

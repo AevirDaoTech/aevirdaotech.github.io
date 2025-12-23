@@ -1,0 +1,9 @@
+{
+  "label": "Consensus & Security",
+  "position": 4,
+  "link": {
+    "type": "generated-index",
+    "description": "Learn about Aevir's consensus mechanism, dual finality, and security model"
+  }
+}
+
