@@ -75,7 +75,7 @@ const config: Config = {
       respectPrefersColorScheme: true,
     },
     navbar: {
-      title: "AevirDao Tech",
+      title: "Aevir",
       logo: {
         alt: "AevirDao Tech Logo",
         src: "img/aevir.png",
