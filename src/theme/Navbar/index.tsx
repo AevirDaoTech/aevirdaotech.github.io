@@ -7,7 +7,7 @@ type Props = WrapperProps<typeof NavbarType>;
 export default function NavbarWrapper(props: Props): ReactNode {
   return (
     <>
-      <nav className="fixed w-full z-50 glass-nav transition-all duration-300">
+      <nav className="navbar fixed w-full z-50 glass-nav transition-all duration-300">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-20">
             <a className="flex-shrink-0 flex items-center gap-3 no-underline" href="/">
@@ -30,13 +30,13 @@ export default function NavbarWrapper(props: Props): ReactNode {
                 Documentation
               </a>
               <a
-                href="#"
+                href="/blog"
                 className="text-sm font-medium text-gray-600 hover:text-aevir-orange transition-colors no-underline"
               >
                 Blog
               </a>
 
-              <a href="#" className="relative group px-4 py-2 no-underline">
+              <a href="/Aevir_Litepaper_EN.pdf" target="_blank" className="relative group px-4 py-2 no-underline">
                 <span className="absolute inset-0 border border-dashed border-aevir-orange rounded-sm group-hover:border-solid transition-all"></span>
                 <span className="relative text-sm font-medium text-aevir-black group-hover:text-aevir-orange transition-colors">
                   Litepaper
@@ -46,7 +46,7 @@ export default function NavbarWrapper(props: Props): ReactNode {
 
             <div className="hidden md:flex items-center">
               <a
-                href="#"
+                href="https://github.com/AevirDaoTech"
                 className="text-sm font-bold text-aevir-orange hover:text-aevir-black transition-colors flex items-center gap-1"
               >
                 GitHub <span className="text-lg">→</span>
