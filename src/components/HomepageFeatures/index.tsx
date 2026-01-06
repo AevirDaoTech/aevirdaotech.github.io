@@ -19,7 +19,7 @@ export default function HomepageFeatures(): ReactNode {
 
             <div className="relative transform translate-y-1">
               <div className="absolute inset-0 bg-aevir-gray skew-x-[-10deg] opacity-20"></div>
-              <div className="relative border border-aevir-black px-3 py-1 skew-x-[-10deg]">
+              <div className="relative border border-solid border-aevir-black px-3 py-1 skew-x-[-10deg]">
                 <span className="block skew-x-[10deg] font-orbitron text-xs sm:text-sm font-bold text-aevir-black tracking-wider">
                   DOCS
                 </span>
@@ -32,7 +32,7 @@ export default function HomepageFeatures(): ReactNode {
           </p>
 
           <div className="mt-10 mb-12">
-            <button className="group relative inline-flex items-center justify-center px-10 py-4 font-orbitron font-bold text-white transition-all duration-200 bg-aevir-black focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-aevir-black hover:bg-aevir-orange hover:text-white shadow-lg hover:shadow-xl transform hover:-translate-y-0.5">
+            <button className="group relative inline-flex items-center justify-center px-10 py-4 font-orbitron font-bold text-white transition-all duration-200 bg-aevir-black focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-aevir-black hover:bg-aevir-orange hover:text-white shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 cursor-pointer">
               <span className="absolute inset-0 w-full h-full -mt-1 rounded-lg opacity-30 bg-gradient-to-b from-transparent via-transparent to-black"></span>
               <span className="relative text-lg tracking-wider">
                 GET STARTED
@@ -64,9 +64,9 @@ export default function HomepageFeatures(): ReactNode {
       <section className="py-16 bg-white relative">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div className="card group relative p-8 bg-white border border-aevir-gray hover:border-aevir-orange transition-all duration-300 hover:shadow-2xl hover:-translate-y-1 overflow-hidden">
-              <div className="hud-corner top-0 left-0 border-t-2 border-l-2"></div>
-              <div className="hud-corner bottom-0 right-0 border-b-2 border-r-2"></div>
+            <div className="card rounded-none group relative p-8 bg-white border border-aevir-gray hover:border-aevir-orange transition-all duration-300 hover:shadow-2xl hover:-translate-y-1 overflow-hidden">
+              <div className="hud-corner top-0 left-0 border-t-2 border-l-2 border-r-0 border-b-0"></div>
+              <div className="hud-corner bottom-0 right-0 border-b-2 border-r-2 border-l-0 border-t-0"></div>
 
               <div className="h-32 flex justify-center items-center mb-6 relative">
                 <svg
@@ -80,7 +80,7 @@ export default function HomepageFeatures(): ReactNode {
                     cy="50"
                     r="45"
                     stroke="#D9D9D9"
-                    stroke-width="1"
+                    strokeWidth="1"
                     fill="none"
                     className="animate-spin-slow"
                     strokeDasharray="10 5"
@@ -114,9 +114,9 @@ export default function HomepageFeatures(): ReactNode {
               </p>
             </div>
 
-            <div className="card group relative p-8 bg-white border border-aevir-gray hover:border-aevir-orange transition-all duration-300 hover:shadow-2xl hover:-translate-y-1 overflow-hidden">
-              <div className="hud-corner top-0 right-0 border-t-2 border-r-2"></div>
-              <div className="hud-corner bottom-0 left-0 border-b-2 border-l-2"></div>
+            <div className="card rounded-none group relative p-8 bg-white border border-aevir-gray hover:border-aevir-orange transition-all duration-300 hover:shadow-2xl hover:-translate-y-1 overflow-hidden">
+              <div className="hud-corner top-0 right-0 border-t-2 border-r-2 border-l-0 border-b-0"></div>
+              <div className="hud-corner bottom-0 left-0 border-b-2 border-l-2 border-r-0 border-t-0"></div>
 
               <div className="h-32 flex justify-center items-center mb-6 relative">
                 <svg
@@ -188,9 +188,9 @@ export default function HomepageFeatures(): ReactNode {
               </p>
             </div>
 
-            <div className="card group relative p-8 bg-white border border-aevir-gray hover:border-aevir-orange transition-all duration-300 hover:shadow-2xl hover:-translate-y-1 overflow-hidden">
-              <div className="hud-corner top-0 left-0 border-t-2 border-l-2"></div>
-              <div className="hud-corner top-0 right-0 border-t-2 border-r-2"></div>
+            <div className="card rounded-none group relative p-8 bg-white border border-aevir-gray hover:border-aevir-orange transition-all duration-300 hover:shadow-2xl hover:-translate-y-1 overflow-hidden">
+              <div className="hud-corner top-0 left-0 border-t-2 border-l-2 border-r-0 border-b-0"></div>
+              <div className="hud-corner top-0 right-0 border-t-2 border-r-2 border-l-0 border-b-0"></div>
 
               <div className="h-32 flex justify-center items-center mb-6 relative">
                 <svg

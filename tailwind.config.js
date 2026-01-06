@@ -24,6 +24,37 @@ module.exports = {
       backgroundImage: {
         'grid-pattern': "linear-gradient(to right, #f0f0f0 1px, transparent 1px), linear-gradient(to bottom, #f0f0f0 1px, transparent 1px)",
       },
+      animation: {
+        'float': 'float 6s ease-in-out infinite',
+        'spin-slow': 'spin-slow 12s linear infinite',
+        'pulse-glow': 'pulse-glow 3s ease-in-out infinite',
+        'scan': 'scan 3s linear infinite',
+      },
+      keyframes: {
+        float: {
+          '0%, 100%': { transform: 'translateY(0px)' },
+          '50%': { transform: 'translateY(-10px)' },
+        },
+        'spin-slow': {
+          from: { transform: 'rotate(0deg)' },
+          to: { transform: 'rotate(360deg)' },
+        },
+        'pulse-glow': {
+          '0%, 100%': { 
+            opacity: '0.6',
+            filter: 'drop-shadow(0 0 2px rgba(255, 104, 32, 0.5))'
+          },
+          '50%': { 
+            opacity: '1',
+            filter: 'drop-shadow(0 0 8px rgba(255, 104, 32, 0.8))'
+          },
+        },
+        scan: {
+          '0%': { transform: 'translateY(-100%)', opacity: '0' },
+          '50%': { opacity: '1' },
+          '100%': { transform: 'translateY(100%)', opacity: '0' },
+        },
+      },
     },
   },
   plugins: [],
