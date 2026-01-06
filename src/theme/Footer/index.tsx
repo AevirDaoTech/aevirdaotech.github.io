@@ -20,7 +20,7 @@ export default function FooterWrapper(props: Props): ReactNode {
               <ul className="space-y-2 list-none p-0">
                 <li>
                   <a
-                    href="#"
+                    href="/docs/category/aevir-overview"
                     className="text-sm text-gray-600 hover:text-aevir-orange transition-colors no-underline"
                   >
                     Aevirdao Docs
@@ -36,7 +36,7 @@ export default function FooterWrapper(props: Props): ReactNode {
               <ul className="space-y-2 list-none p-0">
                 <li>
                   <a
-                    href="#"
+                    href="https://discord.com/invite/aevirdao"
                     className="text-sm text-gray-600 hover:text-aevir-orange transition-colors flex items-center gap-1 no-underline"
                   >
                     Discord <span className="text-xs">↗</span>
@@ -44,7 +44,7 @@ export default function FooterWrapper(props: Props): ReactNode {
                 </li>
                 <li>
                   <a
-                    href="#"
+                    href="https://x.com/AevirDAO"
                     className="text-sm text-gray-600 hover:text-aevir-orange transition-colors flex items-center gap-1 no-underline"
                   >
                     X <span className="text-xs">↗</span>
@@ -60,7 +60,7 @@ export default function FooterWrapper(props: Props): ReactNode {
               <ul className="space-y-2 list-none p-0">
                 <li>
                   <a
-                    href="#"
+                    href="/blog"
                     className="text-sm text-gray-600 hover:text-aevir-orange transition-colors no-underline"
                   >
                     Blog
@@ -68,7 +68,7 @@ export default function FooterWrapper(props: Props): ReactNode {
                 </li>
                 <li>
                   <a
-                    href="#"
+                    href="https://github.com/AevirDaoTech"
                     className="text-sm text-gray-600 hover:text-aevir-orange transition-colors flex items-center gap-1 no-underline"
                   >
                     GitHub <span className="text-xs">↗</span>
