@@ -89,6 +89,11 @@ const config: Config = {
         },
         { to: "/blog", label: "Blog", position: "left" },
         {
+          type: "html",
+          position: "left",
+          value: '<a href="/Aevir_Litepaper_EN.pdf" target="_blank" rel="noopener noreferrer">Litepaper</a>',
+        },
+        {
           href: "https://github.com/AevirDaoTech",
           label: "GitHub",
           position: "right",
