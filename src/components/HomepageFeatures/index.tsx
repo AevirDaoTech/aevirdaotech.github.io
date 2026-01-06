@@ -32,7 +32,10 @@ export default function HomepageFeatures(): ReactNode {
           </p>
 
           <div className="mt-10 mb-12">
-            <button className="group relative inline-flex items-center justify-center px-10 py-4 font-orbitron font-bold text-white transition-all duration-200 bg-aevir-black focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-aevir-black hover:bg-aevir-orange hover:text-white shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 cursor-pointer">
+            <a
+              className="group no-underline relative inline-flex items-center justify-center px-10 py-4 font-orbitron font-bold text-white transition-all duration-200 bg-aevir-black focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-aevir-black hover:bg-aevir-orange hover:text-white shadow-lg hover:shadow-xl transform hover:-translate-y-0.5"
+              href="/docs/category/aevir-overview"
+            >
               <span className="absolute inset-0 w-full h-full -mt-1 rounded-lg opacity-30 bg-gradient-to-b from-transparent via-transparent to-black"></span>
               <span className="relative text-lg tracking-wider">
                 GET STARTED
@@ -50,7 +53,7 @@ export default function HomepageFeatures(): ReactNode {
                   d="M13 7l5 5m0 0l-5 5m5-5H6"
                 ></path>
               </svg>
-            </button>
+            </a>
           </div>
 
           <div className="flex justify-center items-center gap-4 opacity-30">

@@ -13,10 +13,18 @@
 @tailwind utilities;
 
 /* 修复：由于 preflight 被禁用，需要手动为 border 类添加 border-style */
+/* 只在没有显式指定 border-style 类时才应用 solid */
 @layer utilities {
-  .border {
-    border-style: solid;
+  .border:not(.border-solid):not(.border-dashed):not(.border-dotted):not(.border-double):not(.border-none):not([class*="border-solid"]):not([class*="border-dashed"]):not([class*="border-dotted"]):not([class*="border-double"]):not([class*="border-none"]) {
+    border-style: solid !important;
   }
+  
+  /* 确保 Tailwind 的 border-style 类优先级更高 */
+  .border-solid { border-style: solid !important; }
+  .border-dashed { border-style: dashed !important; }
+  .border-dotted { border-style: dotted !important; }
+  .border-double { border-style: double !important; }
+  .border-none { border-style: none !important; }
 }
 
 /* You can override the default Infima variables here. */

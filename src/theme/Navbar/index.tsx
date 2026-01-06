@@ -10,7 +10,7 @@ export default function NavbarWrapper(props: Props): ReactNode {
       <nav className="fixed w-full z-50 glass-nav transition-all duration-300">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-20">
-            <div className="flex-shrink-0 flex items-center gap-3 cursor-pointer">
+            <a className="flex-shrink-0 flex items-center gap-3 no-underline" href="/">
               <span className="font-orbitron font-bold text-2xl tracking-widest text-aevir-black">
                 AEVIR
               </span>
@@ -20,23 +20,23 @@ export default function NavbarWrapper(props: Props): ReactNode {
                 </span>
                 <div className="absolute -left-3 top-1/2 -translate-y-1/2 w-2 h-[1px] bg-gray-300"></div>
               </div>
-            </div>
+            </a>
 
             <div className="hidden md:flex items-center space-x-8">
               <a
-                href="#"
-                className="text-sm font-medium text-gray-600 hover:text-aevir-orange transition-colors"
+                href="/docs/category/aevir-overview"
+                className="text-sm font-medium text-gray-600 hover:text-aevir-orange transition-colors no-underline"
               >
                 Documentation
               </a>
               <a
                 href="#"
-                className="text-sm font-medium text-gray-600 hover:text-aevir-orange transition-colors"
+                className="text-sm font-medium text-gray-600 hover:text-aevir-orange transition-colors no-underline"
               >
                 Blog
               </a>
 
-              <a href="#" className="relative group px-4 py-2">
+              <a href="#" className="relative group px-4 py-2 no-underline">
                 <span className="absolute inset-0 border border-dashed border-aevir-orange rounded-sm group-hover:border-solid transition-all"></span>
                 <span className="relative text-sm font-medium text-aevir-black group-hover:text-aevir-orange transition-colors">
                   Litepaper
