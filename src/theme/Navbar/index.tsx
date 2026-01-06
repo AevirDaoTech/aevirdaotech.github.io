@@ -37,7 +37,6 @@ export default function NavbarWrapper(props: Props): ReactNode {
               </a>
 
               <a href="/Aevir_Litepaper_EN.pdf" target="_blank" className="relative group px-4 py-2 no-underline">
-                <span className="absolute inset-0 border border-dashed border-aevir-orange rounded-sm group-hover:border-solid transition-all"></span>
                 <span className="relative text-sm font-medium text-aevir-black group-hover:text-aevir-orange transition-colors">
                   Litepaper
                 </span>

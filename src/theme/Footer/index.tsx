@@ -80,7 +80,7 @@ export default function FooterWrapper(props: Props): ReactNode {
 
           <div className="border-t border-solid border-l-0 border-r-0 border-b-0 border-gray-200 pt-8 flex flex-col md:flex-row justify-center items-center text-center">
             <p className="text-xs text-gray-400 font-space">
-              Copyright © 2025 My Project, Inc. Built with Docusaurus.
+              Copyright © 2025-2026 Aevir. Built with Docusaurus.
             </p>
           </div>
         </div>
