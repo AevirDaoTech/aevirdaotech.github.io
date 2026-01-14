@@ -4,10 +4,69 @@
         <title>AevirDao Tech Blog</title>
         <link>https://aevirdaotech.github.io/blog</link>
         <description>AevirDao Tech Blog</description>
-        <lastBuildDate>Fri, 19 Dec 2025 03:02:38 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 14 Jan 2026 09:44:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[Aevir FL Space: Architecting a Sovereign, Modular Production Line for Decentralized AI]]></title>
+            <link>https://aevirdaotech.github.io/blog/aevir-fl-space-en</link>
+            <guid>https://aevirdaotech.github.io/blog/aevir-fl-space-en</guid>
+            <pubDate>Wed, 14 Jan 2026 09:44:00 GMT</pubDate>
+            <description><![CDATA[Discover how Aevir FL Space establishes the world's first "Industrial Standard Container" for distributed AI training, transforming raw computing power into standardized intelligent industry]]></description>
+            <content:encoded><![CDATA[<blockquote>
+<p>Discover how Aevir FL Space establishes the world's first "Industrial Standard Container" for distributed AI training, transforming raw computing power into standardized intelligent industry</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="introduction-from-raw-computing-power-to-standardized-intelligent-industry">Introduction: From "Raw Computing Power" to "Standardized Intelligent Industry"<a href="https://aevirdaotech.github.io/blog/aevir-fl-space-en#introduction-from-raw-computing-power-to-standardized-intelligent-industry" class="hash-link" aria-label="Direct link to Introduction: From &quot;Raw Computing Power&quot; to &quot;Standardized Intelligent Industry&quot;" title="Direct link to Introduction: From &quot;Raw Computing Power&quot; to &quot;Standardized Intelligent Industry&quot;" translate="no">​</a></h2>
+<p>In the early explorations of decentralized AI, the disorderly flow of computing power and the lack of training standards led to uncontrollable model outputs and blurred value attribution.</p>
+<p>The Aevir Protocol introduces <strong>FL Space (Federated Learning Space)</strong>, officially establishing the world's first "Industrial Standard Container" for distributed AI training. FL Space is more than just a logical isolation environment; it is a <strong>First-class Object</strong> native to the Aevir blockchain's underlying protocol. It encapsulates the entire lifecycle of model training, verification, release, and settlement, ensuring that intelligent evolution in every vertical domain possesses clear boundaries and sovereignty.</p>
+<p><strong>In the Aevir ecosystem, if the public chain is the physical universe, FL Space is the smart factory within it, governed by its own independent "physical constants" and "commercial laws."</strong></p>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="definition-what-is-fl-space">Definition: What is FL Space?<a href="https://aevirdaotech.github.io/blog/aevir-fl-space-en#definition-what-is-fl-space" class="hash-link" aria-label="Direct link to Definition: What is FL Space?" title="Direct link to Definition: What is FL Space?" translate="no">​</a></h2>
+<p><strong>FL Space</strong> is a logical isolation container and governance unit within the Aevir network designed to organize specialized model training around "defined capability goals" (e.g., legal reasoning, medical diagnosis, or specific Agent decision-making capabilities).</p>
+<p>Every FL Space acts as a <strong>"Contract-Driven Intelligence Laboratory."</strong> At the protocol level, it encapsulates and constrains the rules of the entire lifecycle in a configurable, auditable, and traceable manner—moving from the "Genetic Base" (Base Model) to the "Finished Asset" (Artifact).</p>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="the-seven-protocol-pillars-of-fl-space">The Seven Protocol Pillars of FL Space<a href="https://aevirdaotech.github.io/blog/aevir-fl-space-en#the-seven-protocol-pillars-of-fl-space" class="hash-link" aria-label="Direct link to The Seven Protocol Pillars of FL Space" title="Direct link to The Seven Protocol Pillars of FL Space" translate="no">​</a></h2>
+<p>The activation of every FL Space triggers a set of standardized production procedures:</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="1-base-model--lineage">1. Base Model &amp; Lineage<a href="https://aevirdaotech.github.io/blog/aevir-fl-space-en#1-base-model--lineage" class="hash-link" aria-label="Direct link to 1. Base Model &amp; Lineage" title="Direct link to 1. Base Model &amp; Lineage" translate="no">​</a></h3>
+<p>Specifies the "root" of the space's evolution. It anchors a specific base model version (such as a milestone release of D-MOE Axon), ensuring that training artifacts possess rigorous genealogy tracking and version evolution logic.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="2-defined-paradigms">2. Defined Paradigms<a href="https://aevirdaotech.github.io/blog/aevir-fl-space-en#2-defined-paradigms" class="hash-link" aria-label="Direct link to 2. Defined Paradigms" title="Direct link to 2. Defined Paradigms" translate="no">​</a></h3>
+<p>Presets the allowed production methods within the space. Whether it is large-scale pre-training, Supervised Fine-Tuning (SFT), Reinforcement Learning from Human Feedback (RLHF), or continuous incremental learning, all task parameters and constraints are protected by the protocol.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="3-data-policy--compliance">3. Data Policy &amp; Compliance<a href="https://aevirdaotech.github.io/blog/aevir-fl-space-en#3-data-policy--compliance" class="hash-link" aria-label="Direct link to 3. Data Policy &amp; Compliance" title="Direct link to 3. Data Policy &amp; Compliance" translate="no">​</a></h3>
+<p>Defines the standards for "Intelligent Fuel." It dictates data source boundaries, sampling strategies, cleansing quality standards, and compliance requirements. Through encrypted proof workflows, it ensures models are "fed" while the raw data "remains stationary" and private.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="4-federated-orchestration">4. Federated Orchestration<a href="https://aevirdaotech.github.io/blog/aevir-fl-space-en#4-federated-orchestration" class="hash-link" aria-label="Direct link to 4. Federated Orchestration" title="Direct link to 4. Federated Orchestration" translate="no">​</a></h3>
+<p>Defines the collaborative mode of production relations. It regulates the distributed training workflow, including node roles (Trainers, Validators, Coordinators), aggregation strategies, training rounds/scheduling, and submission/synchronization rules.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="5-evaluation--verification">5. Evaluation &amp; Verification<a href="https://aevirdaotech.github.io/blog/aevir-fl-space-en#5-evaluation--verification" class="hash-link" aria-label="Direct link to 5. Evaluation &amp; Verification" title="Direct link to 5. Evaluation &amp; Verification" translate="no">​</a></h3>
+<p>Establishes the "Weights and Measures" within the space. It defines benchmark sets, metrics, and thresholds. Only contributions that pass automated auditing and metric-based determination are recognized as "Effective Increments."</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="6-scoring--settlement-poic">6. Scoring &amp; Settlement (PoIC)<a href="https://aevirdaotech.github.io/blog/aevir-fl-space-en#6-scoring--settlement-poic" class="hash-link" aria-label="Direct link to 6. Scoring &amp; Settlement (PoIC)" title="Direct link to 6. Scoring &amp; Settlement (PoIC)" translate="no">​</a></h3>
+<p>Enables "Merit-Based Distribution." Tailored to the space's capability goals, it defines differentiated scoring parameters and settlement logic, ensuring every unit of computing power and knowledge contribution is precisely quantified into $AEV/$AUV rewards.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="7-artifacts--assetization">7. Artifacts &amp; Assetization<a href="https://aevirdaotech.github.io/blog/aevir-fl-space-en#7-artifacts--assetization" class="hash-link" aria-label="Direct link to 7. Artifacts &amp; Assetization" title="Direct link to 7. Artifacts &amp; Assetization" translate="no">​</a></h3>
+<p>Defines the rules for the "Crystallization" of intelligence. It regulates the ownership and rights of training artifacts (model weights, LoRA adapters, routing strategies, etc.). Through the <strong>Knowledge NFT</strong> protocol, it enables the immediate assetization and market-based trading of these outputs.</p>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="core-governance-logic-epoch-driven-and-sovereign-boundaries">Core Governance Logic: Epoch-driven and Sovereign Boundaries<a href="https://aevirdaotech.github.io/blog/aevir-fl-space-en#core-governance-logic-epoch-driven-and-sovereign-boundaries" class="hash-link" aria-label="Direct link to Core Governance Logic: Epoch-driven and Sovereign Boundaries" title="Direct link to Core Governance Logic: Epoch-driven and Sovereign Boundaries" translate="no">​</a></h2>
+<p>To ensure the long-term stability of FL Space, Aevir introduces rigorous governance and boundary principles:</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="epoch-based-update">Epoch-based Update<a href="https://aevirdaotech.github.io/blog/aevir-fl-space-en#epoch-based-update" class="hash-link" aria-label="Direct link to Epoch-based Update" title="Direct link to Epoch-based Update" translate="no">​</a></h3>
+<p>FL Space uses <strong>Epochs (Space Versions)</strong> to freeze operational rules and artifacts at specific stages. Every change to critical parameters or artifacts must trigger an on-chain update request, achieving publicly auditable state synchronization.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="boundary-principle">Boundary Principle<a href="https://aevirdaotech.github.io/blog/aevir-fl-space-en#boundary-principle" class="hash-link" aria-label="Direct link to Boundary Principle" title="Direct link to Boundary Principle" translate="no">​</a></h3>
+<p>Aevir adheres to <strong>"One Space, One Standard."</strong> If the same base model requires different training methods, data policies, or settlement rules, the protocol mandates the creation of separate FL Spaces. This extreme sense of boundary ensures the independence and verifiability of different training efforts, preventing resource contamination.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="dao-admission-audit">DAO Admission Audit<a href="https://aevirdaotech.github.io/blog/aevir-fl-space-en#dao-admission-audit" class="hash-link" aria-label="Direct link to DAO Admission Audit" title="Direct link to DAO Admission Audit" translate="no">​</a></h3>
+<p>Every proposal for a new FL Space must undergo deep audit by the <strong>Aevir DAO Committee</strong>. The review covers the fairness of its evaluation benchmarks, the stability of economic parameters, and the technical feasibility of the roadmap.</p>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="business-highlights-why-is-fl-space-unique">Business Highlights: Why is FL Space Unique?<a href="https://aevirdaotech.github.io/blog/aevir-fl-space-en#business-highlights-why-is-fl-space-unique" class="hash-link" aria-label="Direct link to Business Highlights: Why is FL Space Unique?" title="Direct link to Business Highlights: Why is FL Space Unique?" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="1-extreme-commercial-certainty">1. Extreme Commercial Certainty<a href="https://aevirdaotech.github.io/blog/aevir-fl-space-en#1-extreme-commercial-certainty" class="hash-link" aria-label="Direct link to 1. Extreme Commercial Certainty" title="Direct link to 1. Extreme Commercial Certainty" translate="no">​</a></h3>
+<p>For enterprises seeking AI solutions, FL Space provides "Certainty of Output Expectations." Businesses can refer to the FL Space specification and—much like buying standardized goods in a supermarket—subscribe to or purchase the latest Knowledge NFT assets evolving within a specific subspace.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="2-dynamic-routing-of-productivity">2. Dynamic Routing of Productivity<a href="https://aevirdaotech.github.io/blog/aevir-fl-space-en#2-dynamic-routing-of-productivity" class="hash-link" aria-label="Direct link to 2. Dynamic Routing of Productivity" title="Direct link to 2. Dynamic Routing of Productivity" translate="no">​</a></h3>
+<p>Computing nodes (ICNs) can choose to join the FL Space that best matches their hardware characteristics:</p>
+<ul>
+<li class=""><strong>High-Throughput Nodes:</strong> Join Video/Multimodal FL Spaces to pursue maximum output.</li>
+<li class=""><strong>High-Precision Nodes:</strong> Join Medical/Financial decision-making FL Spaces to earn premium verification premiums.</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="3-true-value-return">3. True Value Return<a href="https://aevirdaotech.github.io/blog/aevir-fl-space-en#3-true-value-return" class="hash-link" aria-label="Direct link to 3. True Value Return" title="Direct link to 3. True Value Return" translate="no">​</a></h3>
+<p>Every LoRA and every parameter weight produced by an FL Space carries an unalterable "Spatial Fingerprint." This ensures that the profit-sharing for knowledge contributors and computing providers is no longer a one-time event, but a long-term royalty return as assets are circulated and invoked within the Agent market.</p>
+<hr>
+<p><strong>Aevir FL Space: Assetizing intelligence within a framework of order.</strong></p>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[Aevir Blockchain Architecture: Dual-Layer Consensus Built for the AI Era]]></title>
             <link>https://aevirdaotech.github.io/blog/aevir-blockchain-architecture-en</link>
