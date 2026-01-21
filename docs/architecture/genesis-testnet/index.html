@@ -1,0 +1,217 @@
+<!doctype html>
+<html lang="en" dir="ltr" class="docs-wrapper plugin-docs plugin-id-default docs-version-current docs-doc-page docs-doc-id-architecture/genesis-testnet" data-has-hydrated="false">
+<head>
+<meta charset="UTF-8">
+<meta name="generator" content="Docusaurus v3.9.2">
+<title data-rh="true">Aevir Genesis: Testnet Execution Plan | AevirDao Tech</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:image" content="https://aevirdaotech.github.io/img/docusaurus-social-card.jpg"><meta data-rh="true" name="twitter:image" content="https://aevirdaotech.github.io/img/docusaurus-social-card.jpg"><meta data-rh="true" property="og:url" content="https://aevirdaotech.github.io/docs/architecture/genesis-testnet"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="Aevir Genesis: Testnet Execution Plan | AevirDao Tech"><meta data-rh="true" name="description" content="Overview"><meta data-rh="true" property="og:description" content="Overview"><link data-rh="true" rel="icon" href="/img/favicon.png"><link data-rh="true" rel="canonical" href="https://aevirdaotech.github.io/docs/architecture/genesis-testnet"><link data-rh="true" rel="alternate" href="https://aevirdaotech.github.io/docs/architecture/genesis-testnet" hreflang="en"><link data-rh="true" rel="alternate" href="https://aevirdaotech.github.io/docs/architecture/genesis-testnet" hreflang="x-default"><script data-rh="true" type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Blockchain Architecture","item":"https://aevirdaotech.github.io/docs/category/blockchain-architecture"},{"@type":"ListItem","position":2,"name":"Aevir Genesis: Testnet Execution Plan","item":"https://aevirdaotech.github.io/docs/architecture/genesis-testnet"}]}</script><link rel="alternate" type="application/rss+xml" href="/blog/rss.xml" title="AevirDao Tech RSS Feed">
+<link rel="alternate" type="application/atom+xml" href="/blog/atom.xml" title="AevirDao Tech Atom Feed"><link rel="stylesheet" href="/assets/css/styles.4c876b47.css">
+<script src="/assets/js/runtime~main.3a6c51fc.js" defer="defer"></script>
+<script src="/assets/js/main.bdade6cb.js" defer="defer"></script>
+</head>
+<body class="navigation-with-keyboard">
+<svg style="display: none;"><defs>
+<symbol id="theme-svg-external-link" viewBox="0 0 24 24"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"/></symbol>
+</defs></svg>
+<script>!function(){var t=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return window.localStorage.getItem("theme")}catch(t){}}();document.documentElement.setAttribute("data-theme",t||(window.matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light")),document.documentElement.setAttribute("data-theme-choice",t||"system")}(),function(){try{const c=new URLSearchParams(window.location.search).entries();for(var[t,e]of c)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id="__docusaurus"><div role="region" aria-label="Skip to main content"><a class="skipToContent_fXgn" href="#__docusaurus_skipToContent_fallback">Skip to main content</a></div><nav class="navbar fixed w-full z-50 glass-nav transition-all duration-300"><div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"><div class="flex justify-between items-center h-20"><a class="flex-shrink-0 flex items-center gap-3 no-underline" href="/"><span class="font-orbitron font-bold text-2xl tracking-widest text-aevir-black">AEVIR</span><div class="relative flex items-center justify-center"><span class="font-orbitron text-[10px] font-bold text-aevir-white bg-aevir-black px-2 py-0.5 rounded-sm tracking-wider">DOCS</span><div class="absolute -left-3 top-1/2 -translate-y-1/2 w-2 h-[1px] bg-gray-300"></div></div></a><div class="hidden md:flex items-center space-x-8"><a href="/docs/category/aevir-overview" class="text-sm font-medium text-gray-600 hover:text-aevir-orange transition-colors no-underline">Documentation</a><a href="/blog" class="text-sm font-medium text-gray-600 hover:text-aevir-orange transition-colors no-underline">Blog</a><a href="/Aevir_Litepaper_EN.pdf" target="_blank" class="relative group px-4 py-2 no-underline"><span class="relative text-sm font-medium text-aevir-black group-hover:text-aevir-orange transition-colors">Litepaper</span></a></div><div class="hidden md:flex items-center"><a href="https://github.com/AevirDaoTech" class="text-sm font-bold text-aevir-orange hover:text-aevir-black transition-colors flex items-center gap-1">GitHub <span class="text-lg">→</span></a></div><div class="md:hidden flex items-center"><button class="text-aevir-black hover:text-aevir-orange"><svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg></button></div></div></div></nav><div id="__docusaurus_skipToContent_fallback" class="theme-layout-main main-wrapper mainWrapper_z2l0"><div class="docsWrapper_hBAB"><button aria-label="Scroll back to top" class="clean-btn theme-back-to-top-button backToTopButton_sjWU" type="button"></button><div class="docRoot_UBD9"><aside class="theme-doc-sidebar-container docSidebarContainer_YfHR"><div class="sidebarViewport_aRkj"><div class="sidebar_njMd"><nav aria-label="Docs sidebar" class="menu thin-scrollbar menu_SIkG"><ul class="theme-doc-sidebar-menu menu__list"><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/docs/category/aevir-overview"><span title="Aevir Overview" class="categoryLinkLabel_W154">Aevir Overview</span></a><button aria-label="Expand sidebar category &#x27;Aevir Overview&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/docs/category/onboarding"><span title="Onboarding" class="categoryLinkLabel_W154">Onboarding</span></a><button aria-label="Expand sidebar category &#x27;Onboarding&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--active" href="/docs/category/blockchain-architecture"><span title="Blockchain Architecture" class="categoryLinkLabel_W154">Blockchain Architecture</span></a><button aria-label="Collapse sidebar category &#x27;Blockchain Architecture&#x27;" aria-expanded="true" type="button" class="clean-btn menu__caret"></button></div><ul class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/architecture/overview"><span title="Architecture Overview" class="linkLabel_WmDU">Architecture Overview</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/architecture/dual-consensus"><span title="Dual-Layer Consensus: Execution &amp; Block Production" class="linkLabel_WmDU">Dual-Layer Consensus: Execution &amp; Block Production</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link menu__link--active" aria-current="page" tabindex="0" href="/docs/architecture/genesis-testnet"><span title="Aevir Genesis: Testnet Execution Plan" class="linkLabel_WmDU">Aevir Genesis: Testnet Execution Plan</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/architecture/fl-space"><span title="FL Space: Federated Learning Space" class="linkLabel_WmDU">FL Space: Federated Learning Space</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/architecture/poic"><span title="PoIC: Proof of Intelligent Contribution" class="linkLabel_WmDU">PoIC: Proof of Intelligent Contribution</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/architecture/node-topology"><span title="Node Roles &amp; Network Topology" class="linkLabel_WmDU">Node Roles &amp; Network Topology</span></a></li></ul></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/docs/category/consensus--security"><span title="Consensus &amp; Security" class="categoryLinkLabel_W154">Consensus &amp; Security</span></a><button aria-label="Expand sidebar category &#x27;Consensus &amp; Security&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/docs/category/tokenomics"><span title="Tokenomics" class="categoryLinkLabel_W154">Tokenomics</span></a><button aria-label="Expand sidebar category &#x27;Tokenomics&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/docs/category/nodes"><span title="Nodes" class="categoryLinkLabel_W154">Nodes</span></a><button aria-label="Expand sidebar category &#x27;Nodes&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/docs/category/for-developers"><span title="For Developers" class="categoryLinkLabel_W154">For Developers</span></a><button aria-label="Expand sidebar category &#x27;For Developers&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/docs/category/ai-tasks--applications"><span title="AI Tasks &amp; Applications" class="categoryLinkLabel_W154">AI Tasks &amp; Applications</span></a><button aria-label="Expand sidebar category &#x27;AI Tasks &amp; Applications&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/docs/category/governance--community"><span title="Governance &amp; Community" class="categoryLinkLabel_W154">Governance &amp; Community</span></a><button aria-label="Expand sidebar category &#x27;Governance &amp; Community&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/docs/category/risks--security-practices"><span title="Risks &amp; Security Practices" class="categoryLinkLabel_W154">Risks &amp; Security Practices</span></a><button aria-label="Expand sidebar category &#x27;Risks &amp; Security Practices&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li></ul></nav></div></div></aside><main class="docMainContainer_TBSr"><div class="container padding-top--md padding-bottom--lg"><div class="row"><div class="col docItemCol_VOVn"><div class="docItemContainer_Djhp"><article><nav class="theme-doc-breadcrumbs breadcrumbsContainer_Z_bl" aria-label="Breadcrumbs"><ul class="breadcrumbs"><li class="breadcrumbs__item"><a aria-label="Home page" class="breadcrumbs__link" href="/"><svg viewBox="0 0 24 24" class="breadcrumbHomeIcon_YNFT"><path d="M10 19v-5h4v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-7h1.7c.46 0 .68-.57.33-.87L12.67 3.6c-.38-.34-.96-.34-1.34 0l-8.36 7.53c-.34.3-.13.87.33.87H5v7c0 .55.45 1 1 1h3c.55 0 1-.45 1-1z" fill="currentColor"></path></svg></a></li><li class="breadcrumbs__item"><a class="breadcrumbs__link" href="/docs/category/blockchain-architecture"><span>Blockchain Architecture</span></a></li><li class="breadcrumbs__item breadcrumbs__item--active"><span class="breadcrumbs__link">Aevir Genesis: Testnet Execution Plan</span></li></ul></nav><div class="tocCollapsible_ETCw theme-doc-toc-mobile tocMobile_ITEo"><button type="button" class="clean-btn tocCollapsibleButton_TO0P">On this page</button></div><div class="theme-doc-markdown markdown"><header><h1>Aevir Genesis: Testnet Execution Plan</h1></header>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="overview">Overview<a href="#overview" class="hash-link" aria-label="Direct link to Overview" title="Direct link to Overview" translate="no">​</a></h2>
+<p><strong>Aevir Genesis</strong> is the final rehearsal stage before the official launch of the Aevir mainnet. The core objectives of this testnet are to validate the effectiveness of <strong>Proof of Intelligent Contribution (PoIC)</strong> in a real-world physical network environment, test the distributed training capabilities of the <strong>D-MoE</strong> (Decentralized Mixture of Experts) architecture on consumer-grade hardware, and complete pressure testing for <strong>ASH</strong> standardized hardware.</p>
+<ul>
+<li class=""><strong>Testnet Token:</strong> tAEV</li>
+<li class=""><strong>Incentive Credit:</strong> AGC (Aevir Genesis Credit)</li>
+<li class=""><strong>Core Asset:</strong> AGC generated during the testnet will be mapped proportionally to official <strong>AEV</strong> tokens at the mainnet TGE (Token Generation Event).</li>
+<li class=""><strong>Duration:</strong> Estimated 3-6 months, divided into three phases.</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="core-objectives">Core Objectives<a href="#core-objectives" class="hash-link" aria-label="Direct link to Core Objectives" title="Direct link to Core Objectives" translate="no">​</a></h3>
+<ul>
+<li class=""><strong>Consensus Algorithm Validation:</strong> Empirically verify the attack resistance and fairness of reward distribution for PoIC in a real, high-latency global network.</li>
+<li class=""><strong>Compute Efficiency Benchmarking:</strong> Validate the load balancing capabilities of the D-MoE architecture across physical nodes and determine the compute output curves for ASH standard hosts.</li>
+<li class=""><strong>Economic Model Stress Test:</strong> Through the production rate of AGC, backtest and calibrate the inflation/emission rate of the mainnet AEV token to ensure scarcity and sell-pressure balance at TGE.</li>
+<li class=""><strong>Hardware Anchoring Verification:</strong> Validate the uniqueness of Motus NEURON hardware physical identity binding at the L1 level to completely eliminate simulator cheating.</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="technical-architecture--mvp-form">Technical Architecture &amp; MVP Form<a href="#technical-architecture--mvp-form" class="hash-link" aria-label="Direct link to Technical Architecture &amp; MVP Form" title="Direct link to Technical Architecture &amp; MVP Form" translate="no">​</a></h2>
+<p>The testnet MVP will fully execute the workflow of: <strong>&quot;Data Ingestion -&gt; NPU Sentinel Cleansing -&gt; GPU Federated Training -&gt; On-chain Verification.&quot;</strong></p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="tech-stack">Tech Stack<a href="#tech-stack" class="hash-link" aria-label="Direct link to Tech Stack" title="Direct link to Tech Stack" translate="no">​</a></h3>
+<p>The Aevir testnet utilizes a layered tech stack to ensure heterogeneous hardware compatibility and privacy-preserving computation security:</p>
+<ul>
+<li class=""><strong>L1 Physical Layer (ASH-P0):</strong> Deep adaptation for AMD ROCm instruction sets, achieving low-level scheduling for Ryzen AI Max 395 heterogeneous triple-cores (CPU+GPU+NPU).</li>
+<li class=""><strong>L2 Federated Orchestration Layer:</strong> Utilizes the <strong>Flower</strong> framework for node orchestration, training round scheduling, and disconnection management.</li>
+<li class=""><strong>L3 Edge Computing &amp; Sentinel Mechanism:</strong>
+<ul>
+<li class=""><strong>Sentinel:</strong> Runs independently on the <strong>XDNA 2 NPU</strong>, achieving real-time data cleansing and quality authentication with zero power/performance overhead to the main compute task.</li>
+<li class=""><strong>Training Engine:</strong> Utilizes a proprietary distributed fine-tuning framework with <strong>ZeRO-2</strong> memory optimization technology to enable local parallelization of models with billions of parameters.</li>
+</ul>
+</li>
+<li class=""><strong>L4 Privacy &amp; Security Layer:</strong> Integrates the <strong>Opacus</strong> library to apply Differential Privacy (DP) noise to uploaded gradients.</li>
+<li class=""><strong>L5 Data Layer:</strong> Local deployment of <strong>LanceDB</strong> vector database to support local RAG (Retrieval-Augmented Generation) enhancements.</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="mvp-core-functions">MVP Core Functions<a href="#mvp-core-functions" class="hash-link" aria-label="Direct link to MVP Core Functions" title="Direct link to MVP Core Functions" translate="no">​</a></h3>
+<p>Testnet nodes must run the following core modules:</p>
+<ol>
+<li class=""><strong>Sentinel Module:</strong> Uses NPU to &quot;detoxify&quot; and score incoming raw data, generating a data quality proof.</li>
+<li class=""><strong>D-MoE Training Module:</strong> Receives Expert model slices distributed by the network and performs local LoRA fine-tuning using the GPU.</li>
+<li class=""><strong>PoIC Verification Module:</strong> Generates Zero-Knowledge Proofs (ZKP) containing hardware fingerprints, training Loss curves, and gradient hashes to be submitted for on-chain verification.</li>
+</ol>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="ash--asc-hardware-standardization-system">ASH &amp; ASC Hardware Standardization System<a href="#ash--asc-hardware-standardization-system" class="hash-link" aria-label="Direct link to ASH &amp; ASC Hardware Standardization System" title="Direct link to ASH &amp; ASC Hardware Standardization System" translate="no">​</a></h2>
+<p>The testnet introduces a two-tier standard system to ensure synchronization and stability in federated learning.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="ash-aevir-standard-host-defining-the-trusted-baseline">ASH (Aevir Standard Host): Defining the Trusted Baseline<a href="#ash-aevir-standard-host-defining-the-trusted-baseline" class="hash-link" aria-label="Direct link to ASH (Aevir Standard Host): Defining the Trusted Baseline" title="Direct link to ASH (Aevir Standard Host): Defining the Trusted Baseline" translate="no">​</a></h3>
+<p>ASH defines &quot;what kind of node host/cluster can be accepted by the network&quot;:</p>
+<ul>
+<li class=""><strong>Hardware Thresholds:</strong> Hard metrics for memory, storage, and network bandwidth.</li>
+<li class=""><strong>TEE Security Augmentation:</strong> Must activate <strong>TPM 2.0</strong> and a hardware-isolated environment to ensure the PoIC generation process is tamper-proof.</li>
+<li class=""><strong>Software Baseline:</strong> Unified environment (e.g., Ubuntu 24.04 LTS, specific driver versions, and Docker/containerd runtime).</li>
+<li class=""><strong>Observability:</strong> Open specified network ports, providing Metrics interfaces and audit logs.</li>
+<li class=""><strong>ASH Profile:</strong> These requirements are solidified into executable, certifiable configuration files.</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="asc-aevir-standard-compute-compute-efficiency-rating">ASC (Aevir Standard Compute): Compute Efficiency Rating<a href="#asc-aevir-standard-compute-compute-efficiency-rating" class="hash-link" aria-label="Direct link to ASC (Aevir Standard Compute): Compute Efficiency Rating" title="Direct link to ASC (Aevir Standard Compute): Compute Efficiency Rating" translate="no">​</a></h3>
+<p>ASC defines the node&#x27;s &quot;compute acceleration capability category&quot;:</p>
+<ul>
+<li class=""><strong>Compute Form:</strong> Identifies devices as SoC, dGPU, or multi-card/multi-machine topologies.</li>
+<li class=""><strong>Benchmarking:</strong> Runs a category-specific <strong>Benchmark Suite</strong>.</li>
+<li class=""><strong>TrainingPoint (Pt) Mapping:</strong> Different hardware power-to-compute ratios are automatically mapped to standard incentive coefficients via benchmarking software.</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="ash-p0-genesis-specification">ASH-P0 Genesis Specification<a href="#ash-p0-genesis-specification" class="hash-link" aria-label="Direct link to ASH-P0 Genesis Specification" title="Direct link to ASH-P0 Genesis Specification" translate="no">​</a></h3>
+<p>To ensure deterministic performance in the early network, only one standard tier, <strong>ASH-P0</strong>, is enabled for mainnet launch. The first certified hardware is the <strong>Motus Neuron NEU-X</strong>.</p>
+<ul>
+<li class=""><strong>Core Processor:</strong> AMD Ryzen AI Max+ 395 (Heterogeneous architecture, integrated XDNA 2 NPU).</li>
+<li class=""><strong>Memory:</strong> 128GB LPDDR5X (Unified memory architecture to solve VRAM bottlenecks).</li>
+<li class=""><strong>Interconnect:</strong> Thunderbolt 4/5 (Supports S-Cluster).</li>
+<li class=""><strong>Storage:</strong> 2TB NVMe SSD PCIe 4.0.</li>
+<li class=""><strong>Network:</strong> 10GbE (10-Gigabit Ethernet).</li>
+<li class=""><strong>OS Baseline:</strong> Ubuntu 24.04 LTS.</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="network-topology-one-machine-one-node">Network Topology: One Machine, One Node<a href="#network-topology-one-machine-one-node" class="hash-link" aria-label="Direct link to Network Topology: One Machine, One Node" title="Direct link to Network Topology: One Machine, One Node" translate="no">​</a></h3>
+<p>The testnet strictly enforces a <strong>&quot;One Machine, One Node&quot;</strong> topology.</p>
+<ul>
+<li class=""><strong>Independent Nodes:</strong> Each physical device meeting ASC-P0 standards exists as a single logical node.</li>
+<li class=""><strong>No Cluster Mode:</strong> Physical cluster aggregation is disabled during the testnet; all gradient aggregation and communication happen at the network layer to verify the independent contribution capability of individual edge devices.</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="admission-process--whitelist-mechanism">Admission Process &amp; Whitelist Mechanism<a href="#admission-process--whitelist-mechanism" class="hash-link" aria-label="Direct link to Admission Process &amp; Whitelist Mechanism" title="Direct link to Admission Process &amp; Whitelist Mechanism" translate="no">​</a></h2>
+<p>The testnet employs a strict <strong>Permissioned Admission</strong> system, opening only <strong>50 whitelist Operator slots</strong>.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="five-step-node-admission">Five-Step Node Admission<a href="#five-step-node-admission" class="hash-link" aria-label="Direct link to Five-Step Node Admission" title="Direct link to Five-Step Node Admission" translate="no">​</a></h3>
+<ol>
+<li class=""><strong>Declaration:</strong> Submit target ASH Profile and ASC Class; bind node identity public key.</li>
+<li class=""><strong>Preflight Check:</strong> Run official tools to generate an &quot;Environment Fingerprint,&quot; verifying OS, Kernel, drivers, and TPM status.</li>
+<li class=""><strong>Compute Calibration:</strong> Complete the ASC Benchmark in the official container to confirm compute category and verify long-term stability via ASH Stability tests.</li>
+<li class=""><strong>Compliance Certification:</strong> Upon network verification, an ASH Compliance Certificate is issued, binding node identity, ASH Profile version, ASC Class, and validity period.</li>
+<li class=""><strong>Task Activation:</strong> The certificate becomes effective, and the node formally enters the task pool to receive routing.</li>
+</ol>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="whitelist-audit-standards">Whitelist Audit Standards<a href="#whitelist-audit-standards" class="hash-link" aria-label="Direct link to Whitelist Audit Standards" title="Direct link to Whitelist Audit Standards" translate="no">​</a></h3>
+<p>Applicants must pass a comprehensive background review by the <strong>DAO Verification Committee</strong>.</p>
+<ol>
+<li class=""><strong>Basic Hardware Requirements:</strong>
+<ul>
+<li class=""><strong>Hardware Entry:</strong> Must possess Motus Labs officially certified ASC-P0 standard compute units (Ryzen AI Max 395 + 128GB RAM). This is the only physical credential ensuring computation environment homogeneity and PoIC algorithm validity.</li>
+<li class=""><strong>Network Environment:</strong> IDC-grade or enterprise-grade dedicated lines with static public IPs, promising 99.9% uptime.</li>
+<li class=""><strong>Staking Deposit:</strong> Must complete a specified amount of <strong>tAEV staking</strong> before access as a financial collateral for Service Level Agreements (SLA).</li>
+</ul>
+</li>
+</ol>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="recruitment-personas-choose-one-of-four">Recruitment Personas (Choose one of four)<a href="#recruitment-personas-choose-one-of-four" class="hash-link" aria-label="Direct link to Recruitment Personas (Choose one of four)" title="Direct link to Recruitment Personas (Choose one of four)" translate="no">​</a></h3>
+<ul>
+<li class=""><strong>Category A: Top Research &amp; Academic Institutions</strong>
+<ul>
+<li class="">Target: Global university labs, AI research institutes, or blockchain distributed computing groups.</li>
+<li class="">Preference: Academic reputation; ability to provide theoretical optimization for D-MoE or participate in joint academic publications.</li>
+</ul>
+</li>
+<li class=""><strong>Category B: Massive Knowledge Base &amp; Data Holders</strong>
+<ul>
+<li class="">Target: Entities or individuals with private datasets in vertical industries (Law, Finance, Med, Literature).</li>
+<li class="">Preference: Ability to declare &quot;Seed Dataset&quot; categories and scale. These partners receive the highest priority for <strong>LibraryPoint</strong> weight incentives.</li>
+</ul>
+</li>
+<li class=""><strong>Category C: Professional Mining Pools &amp; Compute Operators</strong>
+<ul>
+<li class="">Target: Traditional crypto mining pools, top cloud compute providers, or asset investors with large-scale IDC deployment capabilities.</li>
+<li class="">Preference: Strong capital and maintenance capabilities; commitment to deploying 100+ nodes to ensure a stable compute foundation.</li>
+</ul>
+</li>
+<li class=""><strong>Category D: Model Trainers &amp; AI Developers</strong>
+<ul>
+<li class="">Target: Teams or individuals with experience in model fine-tuning, prompt engineering, or Agent development.</li>
+<li class="">Preference: Rich Linux O&amp;M and AI framework experience; ability to produce actual AI task results via the testnet.</li>
+</ul>
+</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="global-routing-bonus">Global Routing Bonus<a href="#global-routing-bonus" class="hash-link" aria-label="Direct link to Global Routing Bonus" title="Direct link to Global Routing Bonus" translate="no">​</a></h3>
+<p>To simulate a real-world global AI compute grid, quotas are managed by geography:</p>
+<ul>
+<li class=""><strong>Quota Allocation:</strong> Asia-Pacific (15), North America (15), Europe (10), Others (10).</li>
+<li class=""><strong>Priority Weight:</strong> Applicants who fill geographic topology gaps and improve global routing efficiency will receive priority access.</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="node-capacity">Node Capacity<a href="#node-capacity" class="hash-link" aria-label="Direct link to Node Capacity" title="Direct link to Node Capacity" translate="no">​</a></h3>
+<p>1 Whitelist Slot = 1 Operator Entity.</p>
+<ul>
+<li class="">Minimum Startup Scale: 5 ASH standard machines.</li>
+<li class="">Maximum Cap: 50 ASH standard machines.</li>
+<li class="">Estimated Network Scale: 250 - 2,500 physical nodes globally.</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="economic-model-calibration--poic-output-mechanism">Economic Model Calibration &amp; PoIC Output Mechanism<a href="#economic-model-calibration--poic-output-mechanism" class="hash-link" aria-label="Direct link to Economic Model Calibration &amp; PoIC Output Mechanism" title="Direct link to Economic Model Calibration &amp; PoIC Output Mechanism" translate="no">​</a></h2>
+<p>Testnet incentives total <strong>50,000,000 AGC</strong> (5% of mainnet total). As the sole credential for future AEV rights, all output is based on the PoIC algorithm.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="incentive-distribution-structure">Incentive Distribution Structure<a href="#incentive-distribution-structure" class="hash-link" aria-label="Direct link to Incentive Distribution Structure" title="Direct link to Incentive Distribution Structure" translate="no">​</a></h3>
+<ul>
+<li class=""><strong>Daily Output:</strong> Fixed release, split based on total network PoIC score weight.</li>
+<li class=""><strong>Phase Coefficients:</strong> Designed to incentivize nodes to stay online during Turbulence pressure tests:<!-- -->
+<ul>
+<li class="">Phase 1 (Ignition): Coefficient 1.0</li>
+<li class="">Phase 2 (Consensus): Coefficient 1.5</li>
+<li class="">Phase 3 (Turbulence): Coefficient 2.0</li>
+</ul>
+</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="poic-score-calculation-logic">PoIC Score Calculation Logic<a href="#poic-score-calculation-logic" class="hash-link" aria-label="Direct link to PoIC Score Calculation Logic" title="Direct link to PoIC Score Calculation Logic" translate="no">​</a></h3>
+<p>A single node&#x27;s PoIC score (P) is a weighted calculation of <strong>TrainingPoint</strong> (P_t) and <strong>LibraryPoint</strong> (P_l):</p>
+<p><strong>Formula:</strong></p>
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">P = (w_t * P_t^α + w_l * P_l^α)^(1/α)</span><br></span></code></pre></div></div>
+<p><strong>Calculation Example:</strong></p>
+<p><em>Assume Node A runs a NEU-X, online 24/7.</em></p>
+<ol>
+<li class=""><strong>TrainingPoint P_t (Weight 60%):</strong>
+<ul>
+<li class=""><strong>NPU Contribution:</strong> Sentinel module cleansed 10GB of data, score 98/100. Score: 10 × 98 = 980.</li>
+<li class=""><strong>GPU Contribution:</strong> Completed 5 Epochs of LoRA fine-tuning. Loss curve is 5% better than network average. Score: 500 (base) + 50 (bonus) = 550.</li>
+<li class=""><strong>Total P_t:</strong> 1,530.</li>
+</ul>
+</li>
+<li class=""><strong>LibraryPoint P_l (Weight 40%):</strong>
+<ul>
+<li class=""><strong>Data Hosting:</strong> Node stores the &quot;Law - Civil Code&quot; vertical Expert module.</li>
+<li class=""><strong>Service Response:</strong> Responded to 200 retrieval requests from the Knowledge Market.</li>
+<li class=""><strong>Total P_l:</strong> 300 (storage) + 200 (response) = 500.</li>
+</ul>
+</li>
+<li class=""><strong>Final PoIC Weight:</strong>
+<ul>
+<li class="">Assuming α = 1 (linear), w_t = 0.6, w_l = 0.4:</li>
+<li class="">P = 0.6 × 1,530 + 0.4 × 500 = 918 + 200 = 1,118.</li>
+</ul>
+</li>
+</ol>
+<p>Node A will use its weight of 1,118 against the total network score to share the daily AGC pool.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="slashing--anti-cheat-monitoring">Slashing &amp; Anti-Cheat Monitoring<a href="#slashing--anti-cheat-monitoring" class="hash-link" aria-label="Direct link to Slashing &amp; Anti-Cheat Monitoring" title="Direct link to Slashing &amp; Anti-Cheat Monitoring" translate="no">​</a></h3>
+<p>The testnet will implement a Slashing mechanism. The following will result in the forfeiture of staked tAEV and the destruction of earned AGC:</p>
+<ul>
+<li class=""><strong>Downtime:</strong> Failing to submit a heartbeat for 12 consecutive blocks.</li>
+<li class=""><strong>Data Poisoning:</strong> Sentinel module detects abnormal Loss in submitted gradients.</li>
+<li class=""><strong>Sybil Attack:</strong> If ASH ID verification does not match the physical serial number on-chain, whitelist status is revoked and the deposit is confiscated.</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="testnet-phase-roadmap">Testnet Phase Roadmap<a href="#testnet-phase-roadmap" class="hash-link" aria-label="Direct link to Testnet Phase Roadmap" title="Direct link to Testnet Phase Roadmap" translate="no">​</a></h2>
+<table><thead><tr><th>Phase</th><th>Code Name</th><th>Core Tasks</th><th>Incentive Weight</th><th>Scale</th></tr></thead><tbody><tr><td><strong>Phase 1</strong></td><td><strong>Ignition</strong></td><td>Official cold start; fix MotusOS Kernel bugs; validate Ryzen AI Max 395 driver compatibility and Sentinel effectiveness.</td><td>None</td><td>Official nodes &amp; core tech partners (5-10)</td></tr><tr><td><strong>Phase 2</strong></td><td><strong>Consensus</strong></td><td>Validate PoIC fairness; test S-Cluster gradient aggregation efficiency; enable AGC incentives; launch &quot;Data Cleansing Competition.&quot;</td><td>1.0x - 1.5x</td><td>All 50 Whitelist Operators</td></tr><tr><td><strong>Phase 3</strong></td><td><strong>Turbulence</strong></td><td>Stress testing. Simulate large-scale network splits, malicious data injection, and high-concurrency inference requests.</td><td>2.0x + Bug Bounties</td><td>All Nodes</td></tr></tbody></table>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="onboarding-guide">Onboarding Guide<a href="#onboarding-guide" class="hash-link" aria-label="Direct link to Onboarding Guide" title="Direct link to Onboarding Guide" translate="no">​</a></h2>
+<p>All whitelist applicants must prepare the following:</p>
+<ol>
+<li class=""><strong>ASH ID:</strong> Hardware unique fingerprint generated via Motus tools (bound to CPU/Motherboard SN).</li>
+<li class=""><strong>Operator Wallet:</strong> EVM-compatible wallet address supporting the Aevir testnet.</li>
+<li class=""><strong>Topology Map:</strong> Connection method for the reporting node&#x27;s network and cluster.</li>
+</ol>
+<p><em>The testnet is more than a technical sandbox; it is the solidification of the Aevir community consensus. Through standardized hardware and rigorous PoIC, we ensure a robust, efficient, and decentralized AI compute network at mainnet launch.</em></p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="aevir-genesis-validator-program-agvp">Aevir Genesis Validator Program (AGVP)<a href="#aevir-genesis-validator-program-agvp" class="hash-link" aria-label="Direct link to Aevir Genesis Validator Program (AGVP)" title="Direct link to Aevir Genesis Validator Program (AGVP)" translate="no">​</a></h2>
+<p><em>Application Process:</em></p>
+<ol>
+<li class=""><strong>Submit LOI:</strong> Provide institution/team info, background, and deployment plan (≥ 50 nodes).</li>
+<li class=""><strong>KYB/Background Check:</strong> Verification of academic or commercial credentials.</li>
+<li class=""><strong>Tech &amp; Fund Verification:</strong> NDA signing; hardware and fund reserve verification.</li>
+<li class=""><strong>Agreement &amp; Delivery:</strong> Signing SAFT and Node Operation Agreement; issuance of Whitelist License.</li>
+</ol></div></article><nav class="docusaurus-mt-lg pagination-nav" aria-label="Docs pages"><a class="pagination-nav__link pagination-nav__link--prev" href="/docs/architecture/dual-consensus"><div class="pagination-nav__sublabel">Previous</div><div class="pagination-nav__label">Dual-Layer Consensus: Execution &amp; Block Production</div></a><a class="pagination-nav__link pagination-nav__link--next" href="/docs/architecture/fl-space"><div class="pagination-nav__sublabel">Next</div><div class="pagination-nav__label">FL Space: Federated Learning Space</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#overview" class="table-of-contents__link toc-highlight">Overview</a><ul><li><a href="#core-objectives" class="table-of-contents__link toc-highlight">Core Objectives</a></li></ul></li><li><a href="#technical-architecture--mvp-form" class="table-of-contents__link toc-highlight">Technical Architecture &amp; MVP Form</a><ul><li><a href="#tech-stack" class="table-of-contents__link toc-highlight">Tech Stack</a></li><li><a href="#mvp-core-functions" class="table-of-contents__link toc-highlight">MVP Core Functions</a></li></ul></li><li><a href="#ash--asc-hardware-standardization-system" class="table-of-contents__link toc-highlight">ASH &amp; ASC Hardware Standardization System</a><ul><li><a href="#ash-aevir-standard-host-defining-the-trusted-baseline" class="table-of-contents__link toc-highlight">ASH (Aevir Standard Host): Defining the Trusted Baseline</a></li><li><a href="#asc-aevir-standard-compute-compute-efficiency-rating" class="table-of-contents__link toc-highlight">ASC (Aevir Standard Compute): Compute Efficiency Rating</a></li><li><a href="#ash-p0-genesis-specification" class="table-of-contents__link toc-highlight">ASH-P0 Genesis Specification</a></li><li><a href="#network-topology-one-machine-one-node" class="table-of-contents__link toc-highlight">Network Topology: One Machine, One Node</a></li></ul></li><li><a href="#admission-process--whitelist-mechanism" class="table-of-contents__link toc-highlight">Admission Process &amp; Whitelist Mechanism</a><ul><li><a href="#five-step-node-admission" class="table-of-contents__link toc-highlight">Five-Step Node Admission</a></li><li><a href="#whitelist-audit-standards" class="table-of-contents__link toc-highlight">Whitelist Audit Standards</a></li><li><a href="#recruitment-personas-choose-one-of-four" class="table-of-contents__link toc-highlight">Recruitment Personas (Choose one of four)</a></li><li><a href="#global-routing-bonus" class="table-of-contents__link toc-highlight">Global Routing Bonus</a></li><li><a href="#node-capacity" class="table-of-contents__link toc-highlight">Node Capacity</a></li></ul></li><li><a href="#economic-model-calibration--poic-output-mechanism" class="table-of-contents__link toc-highlight">Economic Model Calibration &amp; PoIC Output Mechanism</a><ul><li><a href="#incentive-distribution-structure" class="table-of-contents__link toc-highlight">Incentive Distribution Structure</a></li><li><a href="#poic-score-calculation-logic" class="table-of-contents__link toc-highlight">PoIC Score Calculation Logic</a></li><li><a href="#slashing--anti-cheat-monitoring" class="table-of-contents__link toc-highlight">Slashing &amp; Anti-Cheat Monitoring</a></li></ul></li><li><a href="#testnet-phase-roadmap" class="table-of-contents__link toc-highlight">Testnet Phase Roadmap</a></li><li><a href="#onboarding-guide" class="table-of-contents__link toc-highlight">Onboarding Guide</a></li><li><a href="#aevir-genesis-validator-program-agvp" class="table-of-contents__link toc-highlight">Aevir Genesis Validator Program (AGVP)</a></li></ul></div></div></div></div></main></div></div></div><footer class="bg-gray-50 border-t border-gray-200 pt-16 pb-8"><div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"><div class="grid grid-cols-2 md:grid-cols-4 gap-8 mb-12"><div><h4 class="font-orbitron font-bold text-aevir-black mb-4">Tutorial</h4><ul class="space-y-2 list-none p-0"><li><a href="/docs/category/aevir-overview" class="text-sm text-gray-600 hover:text-aevir-orange transition-colors no-underline">Aevirdao Docs</a></li></ul></div><div><h4 class="font-orbitron font-bold text-aevir-black mb-4">Community</h4><ul class="space-y-2 list-none p-0"><li><a href="https://discord.com/invite/aevirdao" class="text-sm text-gray-600 hover:text-aevir-orange transition-colors flex items-center gap-1 no-underline">Discord <span class="text-xs">↗</span></a></li><li><a href="https://x.com/AevirDAO" class="text-sm text-gray-600 hover:text-aevir-orange transition-colors flex items-center gap-1 no-underline">X <span class="text-xs">↗</span></a></li></ul></div><div><h4 class="font-orbitron font-bold text-aevir-black mb-4">More</h4><ul class="space-y-2 list-none p-0"><li><a href="/blog" class="text-sm text-gray-600 hover:text-aevir-orange transition-colors no-underline">Blog</a></li><li><a href="https://github.com/AevirDaoTech" class="text-sm text-gray-600 hover:text-aevir-orange transition-colors flex items-center gap-1 no-underline">GitHub <span class="text-xs">↗</span></a></li></ul></div></div><div class="border-t border-solid border-l-0 border-r-0 border-b-0 border-gray-200 pt-8 flex flex-col md:flex-row justify-center items-center text-center"><p class="text-xs text-gray-400 font-space">Copyright © 2025-2026 Aevir. Built with Docusaurus.</p></div></div></footer></div>
+</body>
+</html>
