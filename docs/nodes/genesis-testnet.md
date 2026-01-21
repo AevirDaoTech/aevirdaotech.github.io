@@ -2,7 +2,7 @@
 sidebar_position: 2
 ---
 
-# Aevir Genesis: Testnet Execution Plan
+# Genesis Testnet Execution Plan
 
 ## Overview
 
