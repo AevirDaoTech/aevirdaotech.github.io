@@ -149,27 +149,29 @@ Testnet incentives total **50,000,000 AGC** (5% of mainnet total). As the sole c
 
 ### PoIC Score Calculation Logic
 
-A single node's PoIC score ($P$) is a weighted calculation of **TrainingPoint** ($P_t$) and **LibraryPoint** ($P_l$):
+A single node's PoIC score (P) is a weighted calculation of **TrainingPoint** (P_t) and **LibraryPoint** (P_l):
 
 **Formula:**
 
-$$P = (w_t P_t^\alpha + w_l P_l^\alpha)^{1/\alpha}$$
+```
+P = (w_t * P_t^α + w_l * P_l^α)^(1/α)
+```
 
 **Calculation Example:**
 
 _Assume Node A runs a NEU-X, online 24/7._
 
-1. **TrainingPoint $P_t$ (Weight 60%):**
-   - **NPU Contribution:** Sentinel module cleansed 10GB of data, score 98/100. Score: $10 \times 98 = 980$.
-   - **GPU Contribution:** Completed 5 Epochs of LoRA fine-tuning. Loss curve is 5% better than network average. Score: $500 \text{ (base)} + 50 \text{ (bonus)} = 550$.
-   - **Total $P_t$:** 1,530.
-2. **LibraryPoint $P_l$ (Weight 40%):**
+1. **TrainingPoint P_t (Weight 60%):**
+   - **NPU Contribution:** Sentinel module cleansed 10GB of data, score 98/100. Score: 10 × 98 = 980.
+   - **GPU Contribution:** Completed 5 Epochs of LoRA fine-tuning. Loss curve is 5% better than network average. Score: 500 (base) + 50 (bonus) = 550.
+   - **Total P_t:** 1,530.
+2. **LibraryPoint P_l (Weight 40%):**
    - **Data Hosting:** Node stores the "Law - Civil Code" vertical Expert module.
    - **Service Response:** Responded to 200 retrieval requests from the Knowledge Market.
-   - **Total $P_l$:** $300 \text{ (storage)} + 200 \text{ (response)} = 500$.
+   - **Total P_l:** 300 (storage) + 200 (response) = 500.
 3. **Final PoIC Weight:**
-   - Assuming $\alpha = 1$ (linear), $w_t = 0.6, w_l = 0.4$:
-   - $P = 0.6 \times 1,530 + 0.4 \times 500 = 918 + 200 = 1,118$.
+   - Assuming α = 1 (linear), w_t = 0.6, w_l = 0.4:
+   - P = 0.6 × 1,530 + 0.4 × 500 = 918 + 200 = 1,118.
 
 Node A will use its weight of 1,118 against the total network score to share the daily AGC pool.
 
@@ -203,7 +205,7 @@ _The testnet is more than a technical sandbox; it is the solidification of the A
 
 _Application Process:_
 
-1. **Submit LOI:** Provide institution/team info, background, and deployment plan ($\ge$ 50 nodes).
+1. **Submit LOI:** Provide institution/team info, background, and deployment plan (≥ 50 nodes).
 2. **KYB/Background Check:** Verification of academic or commercial credentials.
 3. **Tech & Fund Verification:** NDA signing; hardware and fund reserve verification.
 4. **Agreement & Delivery:** Signing SAFT and Node Operation Agreement; issuance of Whitelist License.
