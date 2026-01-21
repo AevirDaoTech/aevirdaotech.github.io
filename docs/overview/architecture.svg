@@ -1,0 +1,245 @@
+<svg viewBox="0 0 1000 950" xmlns="http://www.w3.org/2000/svg">
+    <!-- Background Grid -->
+    <defs>
+        <pattern id="grid" width="20" height="20" patternUnits="userSpaceOnUse">
+            <path d="M 20 0 L 0 0 0 20" fill="none" stroke="#e0e0e0" stroke-width="0.5"/>
+        </pattern>
+    </defs>
+    <rect width="1000" height="950" fill="url(#grid)" />
+
+    <!-- Style Definitions -->
+    <style>
+        .layer-box { fill: #2d8d10; stroke: #000; stroke-width: 1; }
+        .layer-title { fill: #fff; font-family: Arial, sans-serif; font-size: 13px; font-weight: bold; text-anchor: middle; }
+        .box-white { fill: #fff; stroke: #333; stroke-width: 1; }
+        .box-grey { fill: #f9f9f9; stroke: #333; stroke-width: 1; stroke-dasharray: 4; }
+        .box-orange { fill: #f39200; stroke: #333; stroke-width: 1; }
+        .box-purple { fill: #722ed1; stroke: #333; stroke-width: 1; }
+        .text-main { font-family: Arial, sans-serif; font-size: 12px; fill: #000; text-anchor: middle; }
+        .text-white { font-family: Arial, sans-serif; font-size: 12px; fill: #fff; text-anchor: middle; }
+        .label-text { font-family: Arial, sans-serif; font-size: 11px; fill: #666; text-anchor: middle; }
+        .arrow { stroke: #000; stroke-width: 1; fill: #000; }
+    </style>
+
+    <!-- L5 Access Layer -->
+    <g transform="translate(40, 30)">
+        <rect width="920" height="90" class="box-white" fill="none"/>
+        <rect x="20" y="20" width="60" height="50" class="layer-box"/>
+        <text x="50" y="42" class="layer-title">L5</text>
+        <text x="50" y="58" class="layer-title">Access</text>
+        
+        <rect x="110" y="25" width="170" height="40" class="box-white"/>
+        <text x="195" y="50" class="text-main">Wallet</text>
+        
+        <rect x="310" y="25" width="170" height="40" class="box-white"/>
+        <text x="395" y="50" class="text-main">Knowledge Market</text>
+        
+        <rect x="510" y="25" width="170" height="40" class="box-white"/>
+        <text x="595" y="50" class="text-main">AI Agent</text>
+        
+        <rect x="710" y="25" width="170" height="40" class="box-white"/>
+        <text x="795" y="50" class="text-main">ICN Node</text>
+    </g>
+
+    <!-- L5 Application Layer -->
+    <g transform="translate(40, 130)">
+        <rect width="920" height="90" class="box-white" fill="none"/>
+        <rect x="20" y="20" width="60" height="50" class="layer-box"/>
+        <text x="50" y="42" class="layer-title">L5</text>
+        <text x="50" y="58" class="layer-title">App</text>
+        
+        <rect x="110" y="25" width="170" height="40" class="box-white"/>
+        <text x="195" y="50" class="text-main">DeFi</text>
+        
+        <rect x="310" y="25" width="170" height="40" class="box-white"/>
+        <text x="395" y="50" class="text-main">dApp</text>
+        
+        <rect x="510" y="25" width="170" height="40" class="box-white"/>
+        <text x="595" y="50" class="text-main">AI Infra</text>
+        
+        <rect x="710" y="25" width="170" height="40" class="box-white"/>
+        <text x="795" y="50" class="text-main">AI MoE</text>
+    </g>
+
+    <!-- L4 Middleware -->
+    <g transform="translate(40, 230)">
+        <rect width="920" height="90" class="box-white" fill="none"/>
+        <rect x="20" y="20" width="60" height="50" class="layer-box"/>
+        <text x="50" y="42" class="layer-title">L4</text>
+        <text x="50" y="58" class="layer-title">Middle</text>
+        
+        <rect x="110" y="25" width="170" height="45" class="box-white"/>
+        <text x="195" y="43" class="text-main">Oracle</text>
+        <text x="195" y="58" class="label-text" style="fill:#000">(Aggregated Sig)</text>
+        
+        <rect x="310" y="25" width="170" height="45" class="box-white"/>
+        <text x="395" y="43" class="text-main">Auth</text>
+        <text x="395" y="58" class="label-text" style="fill:#000">(DID/AI-ID)</text>
+        
+        <rect x="510" y="25" width="170" height="45" class="box-white"/>
+        <text x="595" y="43" class="text-main">Data Query</text>
+        <text x="595" y="58" class="label-text" style="fill:#000">(Indexer/RPC)</text>
+        
+        <rect x="710" y="25" width="170" height="45" class="box-white"/>
+        <text x="795" y="43" class="text-main">Cross-chain</text>
+        <text x="795" y="58" class="label-text" style="fill:#000">(Bridge/IRC)</text>
+    </g>
+
+    <!-- L3 Contract Layer -->
+    <g transform="translate(40, 330)">
+        <rect width="920" height="190" class="box-white" fill="none"/>
+        <rect x="20" y="70" width="60" height="50" class="layer-box"/>
+        <text x="50" y="92" class="layer-title">L3</text>
+        <text x="50" y="108" class="layer-title">Contract</text>
+        
+        <g transform="translate(100, 20)">
+            <rect width="800" height="70" class="box-grey"/>
+            <text x="50" y="38" class="label-text">Contract</text>
+            <rect x="90" y="10" width="80" height="50" class="box-orange"/>
+            <text x="130" y="32" class="text-white">Script</text>
+            <text x="130" y="48" class="text-white" style="font-size:9px">Turing Complete</text>
+            
+            <path d="" class="box-purple" stroke-dasharray="2" />
+            <rect x="180" y="10" width="300" height="50" class="box-purple" stroke-dasharray="4" fill-opacity="0.9"/>
+            <text x="330" y="32" class="text-white">ETH Contract (AEP AIP..)</text>
+            <text x="330" y="48" class="text-white">ERC-Compatible</text>
+            
+            <rect x="500" y="10" width="280" height="50" class="box-purple" stroke-dasharray="4"/>
+            <text x="640" y="38" class="text-white">Aevir Uniswap/Solana Program</text>
+        </g>
+
+        <g transform="translate(100, 105)">
+            <rect width="800" height="70" class="box-grey"/>
+            <text x="50" y="38" class="label-text">VM</text>
+            
+            <rect x="110" y="15" width="70" height="40" class="box-purple" stroke-dasharray="4"/>
+            <text x="145" y="40" class="text-white">EVM</text>
+            
+            <rect x="210" y="15" width="100" height="40" class="box-purple" stroke-dasharray="4"/>
+            <text x="260" y="40" class="text-white">aevir-EVM</text>
+            
+            <rect x="330" y="15" width="70" height="40" class="box-purple" stroke-dasharray="4"/>
+            <text x="365" y="40" class="text-white">EVM</text>
+            
+            <rect x="500" y="15" width="120" height="40" class="box-purple" stroke-dasharray="4"/>
+            <text x="560" y="40" class="text-white">SVM</text>
+        </g>
+    </g>
+
+    <!-- L2 Scaling Layer -->
+    <g transform="translate(40, 530)">
+        <rect width="920" height="110" class="box-white" fill="none"/>
+        <rect x="20" y="30" width="60" height="50" class="layer-box"/>
+        <text x="50" y="52" class="layer-title">L2</text>
+        <text x="50" y="68" class="layer-title">Scaling</text>
+        
+        <rect x="190" y="35" width="80" height="50" class="box-orange"/>
+        <text x="230" y="52" class="text-white">Aevir LN</text>
+        <text x="230" y="65" class="text-white" style="font-size:9px">Lightning Network</text>
+        
+        <rect x="340" y="15" width="400" height="85" class="box-purple"/>
+        <text x="540" y="35" class="text-white">L2 Expansion</text>
+        <rect x="390" y="45" width="110" height="30" class="box-white"/>
+        <text x="445" y="65" class="text-main" style="font-size:10px">AE-Rollup</text>
+        <rect x="570" y="45" width="110" height="30" class="box-white"/>
+        <text x="625" y="65" class="text-main" style="font-size:10px">Other Rollups</text>
+    </g>
+
+    <!-- L1 Blockchain Layer -->
+    <g transform="translate(40, 650)">
+        <rect width="920" height="160" class="box-white" fill="none"/>
+        <rect x="20" y="55" width="60" height="50" class="layer-box"/>
+        <text x="50" y="77" class="layer-title">L1</text>
+        <text x="50" y="93" class="layer-title">Chain</text>
+        
+        <g transform="translate(100, 15)">
+            <rect width="800" height="130" class="box-grey"/>
+            <text x="45" y="45" class="label-text">Consensus</text>
+            <text x="45" y="105" class="label-text">Data</text>
+            
+            <rect x="90" y="25" width="75" height="40" class="box-orange" stroke-dasharray="3"/>
+            <text x="127.5" y="50" class="text-white">PoIC</text>
+            
+            <rect x="210" y="25" width="70" height="40" class="box-purple"/>
+            <text x="245" y="50" class="text-white">PoS</text>
+            
+            <rect x="90" y="85" width="75" height="40" class="box-orange" rx="20"/>
+            <text x="127.5" y="110" class="text-white">AEV</text>
+            
+            <!-- Omni-chain cloud -->
+            <path d="M 140 120 Q 130 110 140 100 Q 150 90 170 100 Q 190 90 205 105 Q 220 115 205 130 Q 180 140 160 130 Q 140 140 140 120" fill="#fff566" stroke="#fadb14" />
+            <text x="175" y="118" class="text-main" style="font-size:9px; font-weight:bold">Omni-Asset</text>
+
+            <rect x="210" y="85" width="70" height="40" class="box-purple" stroke-dasharray="4"/>
+            <text x="245" y="110" class="text-white">Ethereum</text>
+
+            <!-- Compatible Chains Area -->
+            <rect x="300" y="20" width="335" height="100" class="box-purple"/>
+            <text x="455" y="35" class="text-white" style="font-size:10px">EVM-Compatible Chains</text>
+            
+            <rect x="315" y="45" width="80" height="30" class="box-white" style="fill:#f9f9f9"/>
+            <text x="355" y="65" class="text-main" style="font-size:10px">PoS</text>
+            <rect x="315" y="85" width="80" height="25" class="box-white"/>
+            <text x="355" y="102" class="text-main" style="font-size:10px">Polygon</text>
+
+            <rect x="430" y="45" width="80" height="30" class="box-white" style="fill:#f9f9f9"/>
+            <text x="470" y="65" class="text-main" style="font-size:10px">PoSA</text>
+            <rect x="430" y="85" width="80" height="25" class="box-white"/>
+            <text x="470" y="102" class="text-main" style="font-size:10px">BNB</text>
+
+            <rect x="545" y="45" width="80" height="30" class="box-white" style="fill:#f9f9f9"/>
+            <text x="585" y="65" class="text-main" style="font-size:10px">DPoS</text>
+            <rect x="545" y="85" width="80" height="25" class="box-white"/>
+            <text x="585" y="102" class="text-main" style="font-size:10px">TRON</text>
+
+            <!-- Solana Area -->
+            <rect x="650" y="45" width="60" height="30" class="box-white"/>
+            <text x="680" y="65" class="text-main" style="font-size:9px">DPoS</text>
+            <rect x="730" y="45" width="60" height="30" class="box-white"/>
+            <text x="760" y="65" class="text-main" style="font-size:9px">PoH</text>
+            <rect x="680" y="85" width="110" height="30" class="box-white"/>
+            <text x="735" y="105" class="text-main">Solana</text>
+        </g>
+    </g>
+
+    <!-- L0 Infrastructure -->
+    <g transform="translate(40, 820)">
+        <rect width="920" height="120" class="box-white" fill="none"/>
+        <rect x="20" y="25" width="60" height="70" class="layer-box"/>
+        <text x="50" y="52" class="layer-title">L0</text>
+        <text x="50" y="68" class="layer-title">Infra</text>
+        
+        <g transform="translate(100, 10)">
+            <!-- Encryption -->
+            <rect width="190" height="100" class="box-grey"/>
+            <text x="95" y="20" class="label-text">Encryption</text>
+            <rect x="10" y="30" width="80" height="30" class="box-white"/><text x="50" y="50" class="label-text" style="fill:#000">Hash Algo</text>
+            <rect x="100" y="30" width="80" height="30" class="box-white"/><text x="140" y="50" class="label-text" style="fill:#000">Asymm Enc</text>
+            <rect x="10" y="65" width="80" height="30" class="box-white"/><text x="50" y="85" class="label-text" style="fill:#000">Encoding</text>
+            <rect x="100" y="65" width="80" height="30" class="box-white"/><text x="140" y="85" class="label-text" style="fill:#000">Merkle Tree</text>
+
+            <!-- Privacy -->
+            <rect x="200" y="0" width="190" height="100" class="box-grey"/>
+            <text x="295" y="20" class="label-text">Privacy Computing</text>
+            <rect x="210" y="30" width="80" height="30" class="box-white"/><text x="250" y="50" class="label-text" style="fill:#000">ZK-Proof</text>
+            <rect x="300" y="30" width="80" height="30" class="box-white"/><text x="340" y="50" class="label-text" style="fill:#000">MPC</text>
+            <rect x="210" y="65" width="80" height="30" class="box-white"/><text x="250" y="85" class="label-text" style="fill:#000">Ring Sig</text>
+            <rect x="300" y="65" width="80" height="30" class="box-white"/><text x="340" y="85" class="label-text" style="fill:#000">TEE</text>
+
+            <!-- Network -->
+            <rect x="400" y="0" width="190" height="100" class="box-grey"/>
+            <text x="495" y="20" class="label-text">Network Nodes</text>
+            <rect x="410" y="30" width="80" height="30" class="box-white"/><text x="450" y="50" class="label-text" style="fill:#000">P2P Net</text>
+            <rect x="500" y="30" width="80" height="30" class="box-white"/><text x="540" y="50" class="label-text" style="fill:#000">Validator</text>
+            <rect x="410" y="65" width="80" height="30" class="box-white"/><text x="450" y="85" class="label-text" style="fill:#000">Bridge</text>
+            <rect x="500" y="65" width="80" height="30" class="box-white"/><text x="540" y="85" class="label-text" style="fill:#000">Full/Light</text>
+
+            <!-- Storage -->
+            <rect x="600" y="0" width="190" height="100" class="box-grey"/>
+            <text x="695" y="20" class="label-text">Data Storage</text>
+            <rect x="610" y="30" width="80" height="30" class="box-white"/><text x="650" y="50" class="label-text" style="fill:#000">On-chain</text>
+            <rect x="700" y="30" width="80" height="30" class="box-white"/><text x="740" y="50" class="label-text" style="fill:#000">Distributed</text>
+            <rect x="610" y="65" width="170" height="30" class="box-white"/><text x="695" y="85" class="label-text" style="fill:#000">IPFS File Storage</text>
+        </g>
+    </g>
+</svg>

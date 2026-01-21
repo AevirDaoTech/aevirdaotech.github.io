@@ -31,3 +31,9 @@ To simultaneously achieve **high-performance AI computation** and **decentralize
 - **Block Production Layer**: a PoIC-based (Proof of Intelligent Contribution) witness network responsible for final block production and security attestation.
 
 On top of this, Aevir uses the native token **$AEV** and the governance form **$veAEV** to build an incentive and governance system that centers on "real contribution".
+
+## Architecture Overview
+
+The following diagram illustrates Aevir's overall architecture and how different components work together:
+
+![Aevir Architecture](./architecture.svg)
